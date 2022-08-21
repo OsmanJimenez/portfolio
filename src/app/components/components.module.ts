@@ -7,12 +7,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { registerLocaleData } from '@angular/common';
 import es from '@angular/common/locales/es';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 registerLocaleData(es);
 
 @NgModule({
-  declarations: [ToolbarComponent],
-  exports: [ToolbarComponent],
+  declarations: [ToolbarComponent, NavbarComponent],
+  exports: [ToolbarComponent, NavbarComponent],
   imports: [
     CommonModule,
     IonicModule,

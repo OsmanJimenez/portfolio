@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,32 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+app-navbar {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #2e3192, #1bffff);
+  background-repeat: no-repeat;
+  height: 600px;
+  align-items: center;
+
+  .box {
+    border: 4px solid #fff;
+    height: 122px;
+
+    .title {
+      text-align: center;
+      margin: 24px;
+      line-height: 24px;
+
+      ion-label {
+        font-size: 48px;
+        color: #fff;
+
+        span {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
