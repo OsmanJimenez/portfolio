@@ -6,14 +6,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { registerLocaleData } from '@angular/common';
 import es from '@angular/common/locales/es';
-import { ToolbarComponent } from './toolbar/toolbar.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { ToolbarComponent } from './header/toolbar/toolbar.component';
+import { NavbarComponent } from './header/navbar/navbar.component';
+import { CardProfileComponent } from './header/card-profile/card-profile.component';
 
 registerLocaleData(es);
 
 @NgModule({
-  declarations: [ToolbarComponent, NavbarComponent],
-  exports: [ToolbarComponent, NavbarComponent],
+  declarations: [ToolbarComponent, NavbarComponent, CardProfileComponent],
+  exports: [ToolbarComponent, NavbarComponent, CardProfileComponent],
   imports: [
     CommonModule,
     IonicModule,

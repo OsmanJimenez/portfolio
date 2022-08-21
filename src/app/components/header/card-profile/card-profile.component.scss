@@ -1,0 +1,31 @@
+ion-card {
+  width: 50%;
+
+  ion-col {
+    padding: 16px;
+    text-align: justify;
+
+    ion-card-title {
+      padding-bottom: 16px;
+    }
+
+    .description {
+      font-size: 17px;
+      line-height: 150%;
+      color: #6e7373;
+    }
+
+    .social-media {
+      button {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        margin: 16px 12px 0px 0px;
+      }
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+}

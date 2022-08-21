@@ -31,6 +31,7 @@ app-navbar {
   background: linear-gradient(to bottom, #2e3192, #1bffff);
   background-repeat: no-repeat;
   height: 600px;
+  max-height: 33%;
   align-items: center;
 
   .box {
@@ -52,4 +53,11 @@ app-navbar {
       }
     }
   }
+}
+
+app-card-profile {
+  display: flex;
+  justify-content: center;
+  margin-top: -78px;
+  
 }
