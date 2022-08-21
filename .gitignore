@@ -1,3 +1,4 @@
+/.angular/cache
 # Specifies intentionally untracked files to ignore when using Git
 # http://git-scm.com/docs/gitignore
 
@@ -12,12 +13,12 @@
 Thumbs.db
 UserInterfaceState.xcuserstate
 $RECYCLE.BIN/
+testroute/
 
 *.log
 log.txt
 npm-debug.log*
 
-/.angular
 /.idea
 /.ionic
 /.sass-cache
@@ -25,8 +26,18 @@ npm-debug.log*
 /.versions
 /.vscode
 /coverage
+/documentation
 /dist
+/documentation
 /node_modules
 /platforms
 /plugins
+/src/environments/environment.ts
 /www
+/android
+/ios
+
+.firebase/
+.firebaserc
+firebase.json
+public/

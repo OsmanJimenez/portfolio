@@ -1,0 +1,90 @@
+
+--PARA AMBOS CASOS
+
+npm install @capacitor/core @capacitor/cli
+
+
+--PARA ANDROID
+
+
+npx cap add android   --> agrega android con el bundle id
+
+ionic capacitor add android
+
+ 2do comando (solo cuando hagas cambios): ionic capacitor copy android
+
+ 3er comando (para correrlo en el cel): ionic capacitor run android
+
+
+
+ionic capacitor build
+ionic capacitor build android
+
+ionic capacitor build android --prod --release
+
+
+edit applicationId at the top of android/app/build.gradle:
+
+defaultConfig {
+-       applicationId "com.capacitorjs.app"
++       applicationId "com.mycompany.myapp"
+
+o change the name of your app, change the value for app_name in strings.xml:
+
+<string name="app_name">MyApp</string>
+strings.xml within the android/app/src/main/res/values
+
+
+<string name="custom_url_scheme">com.capacitorjs.myapp</string>
+
+Para versiones:
+
+Android - android/app/build.gradle (you're looking for the versionName variable)
+iOS - Xcode
+
+
+Error fileopener2 en android studio--->
+
+Instead of
+"public class FileProvider extends android.support.v4.content.FileProvider" replace it with
+"public class FileProvider extends androidx.core.content.FileProvider".
+
+// Para agregar los iconos small y large por defecto en las notificaciones push de OneSignal
+Copiar el contenido de la carpeta /resources/android/onesignal/res en /android/app/src/main/res
+
+// Habilitar HTTTP
+"<application ...
+android:usesCleartextTraffic="true">"
+
+// Para generar el archivo app-release.aab para publicaciones en Google Play Store
+1) En Android Studio ir a Build -> Generate Signed Bundle / APK...
+2) Seleccionar Android App Bundle.
+3) En Key store path colocar ruta hasta my-release-key.keystore
+4) En Key alias colocar alias_name
+5) En los campos de contraseña colocar las mismas registradas al generar el keystore
+6) Marcar Remember passwords y Next.
+7) Seleccionar release y Finish.
+8) Buscar el archivo generado en android\app\release\app-release.aab
+
+// Para actualizar el versionCode y el versionName para cada publicación:
+// Editar el archivo /android/app/build.gradle
+// También sirve para asignar el applicationId
+
+// Para actualizar: app_name, title_activity_main, package_name y custom_url_scheme
+// Editar el archivo /android/app/src/main/res/values/strings.xml
+
+// Para permitir conexiones a API locales (no https)
+// Agregar directiva cleartext en el archivo /android/app/src/main/AndroidManifest.xml
+<application ...
+android:usesCleartextTraffic="true">
+
+// Crear la carpeta www para producción
+ng build --prod
+
+
+// Compilar aplicación en otra ruta
+ng build --configuration production --output-path=public/ --optimization
+
+// Para cambiar el targetSDKVersion, modificar android/variables.gradle
+compileSdkVersion = 30
+targetSdkVersion = 30
