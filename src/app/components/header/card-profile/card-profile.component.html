@@ -2,7 +2,14 @@
   <ion-card-content>
     <ion-grid class="ion-no-padding">
       <ion-row>
-        <ion-col size="8" class="description">
+        <ion-col
+          size-xs="12"
+          size-sm="12"
+          size-md="12"
+          size-lg="8"
+          size-xl="8"
+          class="description"
+        >
           <ion-card-title>Sobre Mi</ion-card-title>
 
           Me alegro de conocerte, soy Ingeniero de Sistemas graduado de la
@@ -17,7 +24,7 @@
 
           <div class="social-media">
             <ng-container *ngFor="let social of iconSocial">
-              <a href="{{social.link}}" target="_blank">
+              <a href="{{ social.link }}" target="_blank">
                 <button>
                   <ion-icon slot="icon-only" [name]="social.icon"></ion-icon>
                 </button>
@@ -25,7 +32,7 @@
             </ng-container>
           </div>
         </ion-col>
-        <ion-col size="4">
+        <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="4" size-xl="4" class="profile">
           <img
             src="assets/img/header/profile.jpg"
             alt="Osman Armando Jimenez Cortes"
