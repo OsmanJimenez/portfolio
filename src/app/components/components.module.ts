@@ -9,12 +9,23 @@ import es from '@angular/common/locales/es';
 import { ToolbarComponent } from './header/toolbar/toolbar.component';
 import { NavbarComponent } from './header/navbar/navbar.component';
 import { CardProfileComponent } from './header/card-profile/card-profile.component';
+import { SkillsComponent } from './section/skills/skills.component';
 
 registerLocaleData(es);
 
 @NgModule({
-  declarations: [ToolbarComponent, NavbarComponent, CardProfileComponent],
-  exports: [ToolbarComponent, NavbarComponent, CardProfileComponent],
+  declarations: [
+    ToolbarComponent,
+    NavbarComponent,
+    CardProfileComponent,
+    SkillsComponent,
+  ],
+  exports: [
+    ToolbarComponent,
+    NavbarComponent,
+    CardProfileComponent,
+    SkillsComponent,
+  ],
   imports: [
     CommonModule,
     IonicModule,
