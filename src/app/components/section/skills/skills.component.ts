@@ -35,6 +35,26 @@ export class SkillsComponent implements OnInit {
       icon: 'devicon-microsoftsqlserver-plain colored',
       name: 'Sql Server',
     },
+    {
+      icon: 'devicon-git-plain colored',
+      name: 'Git',
+    },
+    {
+      icon: 'devicon-gitlab-plain colored',
+      name: 'GitLab',
+    },
+    {
+      icon: 'devicon-github-plain colored',
+      name: 'GitHub',
+    },
+    {
+      icon: 'devicon-ionic-original colored',
+      name: 'Ionic',
+    },
+    {
+      icon: 'devicon-csharp-plain colored',
+      name: 'C#',
+    },
   ];
 
   constructor() {}
