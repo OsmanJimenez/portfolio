@@ -40,14 +40,6 @@ export class SkillsComponent implements OnInit {
       name: 'Git',
     },
     {
-      icon: 'devicon-gitlab-plain colored',
-      name: 'GitLab',
-    },
-    {
-      icon: 'devicon-github-plain colored',
-      name: 'GitHub',
-    },
-    {
       icon: 'devicon-ionic-original colored',
       name: 'Ionic',
     },

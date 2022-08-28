@@ -10,6 +10,7 @@ import { ToolbarComponent } from './header/toolbar/toolbar.component';
 import { NavbarComponent } from './header/navbar/navbar.component';
 import { CardProfileComponent } from './header/card-profile/card-profile.component';
 import { SkillsComponent } from './section/skills/skills.component';
+import { ToolsComponent } from './section/tools/tools.component';
 
 registerLocaleData(es);
 
@@ -19,12 +20,14 @@ registerLocaleData(es);
     NavbarComponent,
     CardProfileComponent,
     SkillsComponent,
+    ToolsComponent,
   ],
   exports: [
     ToolbarComponent,
     NavbarComponent,
     CardProfileComponent,
     SkillsComponent,
+    ToolsComponent,
   ],
   imports: [
     CommonModule,

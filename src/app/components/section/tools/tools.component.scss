@@ -1,0 +1,31 @@
+ion-title {
+  text-align: center;
+  margin-top: 24px;
+}
+
+ion-card {
+  box-shadow: 0px 11px 12px #ebe9f3;
+
+  .list-tools {
+    text-align: center;
+
+    .item-inner {
+      padding: unset;
+    }
+
+    ion-label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        margin-right: 10px;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+ion-card:hover {
+  transform: translateY(-2px);
+}
