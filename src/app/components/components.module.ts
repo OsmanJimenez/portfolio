@@ -11,6 +11,7 @@ import { NavbarComponent } from './header/navbar/navbar.component';
 import { CardProfileComponent } from './header/card-profile/card-profile.component';
 import { SkillsComponent } from './section/skills/skills.component';
 import { ToolsComponent } from './section/tools/tools.component';
+import { ExperienceComponent } from './section/experience/experience.component';
 
 registerLocaleData(es);
 
@@ -21,6 +22,7 @@ registerLocaleData(es);
     CardProfileComponent,
     SkillsComponent,
     ToolsComponent,
+    ExperienceComponent,
   ],
   exports: [
     ToolbarComponent,
@@ -28,6 +30,7 @@ registerLocaleData(es);
     CardProfileComponent,
     SkillsComponent,
     ToolsComponent,
+    ExperienceComponent,
   ],
   imports: [
     CommonModule,

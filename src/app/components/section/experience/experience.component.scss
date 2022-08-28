@@ -1,0 +1,36 @@
+ion-col {
+  display: flex;
+  justify-content: center;
+}
+
+ion-accordion-group {
+  width: 70%;
+  margin-top: 20px;
+
+  .header {
+    border-radius: 15px;
+    margin: 10px 0px;
+  }
+
+  ion-card {
+    margin: 0px;
+
+    .description {
+      ul {
+        margin-top: 10px;
+      }
+    }
+
+    img {
+      border-radius: 15px;
+      max-width: 150px;
+      max-height: 150px;
+    }
+  }
+}
+
+@media all and (max-width: 992px) {
+  ion-accordion-group {
+    width: 90%;
+  }
+}
