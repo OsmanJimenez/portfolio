@@ -42,11 +42,5 @@ ion-card {
 @media all and (max-width: 992px) {
   ion-card {
     width: 90%;
-
-    .profile {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
   }
 }
