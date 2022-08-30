@@ -3,29 +3,33 @@ ion-title {
   margin-top: 24px;
 }
 
-ion-card {
-  box-shadow: 0px 11px 12px #ebe9f3;
+.info-card {
+  width: 70%;
 
-  .list-tools {
-    text-align: center;
+  ion-card {
+    box-shadow: 0px 11px 12px #ebe9f3;
 
-    .item-inner {
-      padding: unset;
-    }
+    .list-tools {
+      text-align: center;
 
-    ion-label {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      .item-inner {
+        padding: unset;
+      }
 
-      i {
-        margin-right: 10px;
-        font-size: 24px;
+      ion-label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+          margin-right: 10px;
+          font-size: 24px;
+        }
       }
     }
   }
-}
 
-ion-card:hover {
-  transform: translateY(-2px);
+  ion-card:hover {
+    transform: translateY(-2px);
+  }
 }
