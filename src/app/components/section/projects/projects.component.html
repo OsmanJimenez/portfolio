@@ -5,8 +5,14 @@
     <ng-container *ngFor="let project of projects">
       <ion-col size-xs="12" size-sm="6" size-md="6" size-lg="4" size-xl="4">
         <ion-card>
-          <a href="{{project.url}}">
-            <img src="assets/img/Portafolio/caratulas/{{project.url_photo}}" />
+          <a
+            href="{{ project.url }}"
+            attr.aria-label="{{ project.name }} | Osman Armando Jimenez Cortes"
+          >
+            <img
+              src="assets/img/Portafolio/caratulas/{{ project.url_photo }}"
+              alt="{{ project.name }} | Osman Armando Jimenez Cortes"
+            />
           </a>
           <ion-card-header>
             <ion-card-title class="text-c">{{ project.name }}</ion-card-title>
