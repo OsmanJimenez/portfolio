@@ -5,7 +5,7 @@
     <ng-container *ngFor="let project of projects">
       <ion-col size-xs="12" size-sm="6" size-md="4" size-lg="3" size-xl="3">
         <ion-card>
-          <img [src]="project.url_photo" />
+          <img src="assets/img/Portafolio/caratulas/{{project.url_photo}}" />
           <ion-card-header>
             <ion-card-title>{{ project.name }}</ion-card-title>
           </ion-card-header>
