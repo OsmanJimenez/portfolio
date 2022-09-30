@@ -3,15 +3,17 @@
 <ion-grid class="info-card">
   <ion-row>
     <ng-container *ngFor="let project of projects">
-      <ion-col size-xs="12" size-sm="6" size-md="4" size-lg="3" size-xl="3">
+      <ion-col size-xs="12" size-sm="6" size-md="6" size-lg="4" size-xl="4">
         <ion-card>
-          <img src="assets/img/Portafolio/caratulas/{{project.url_photo}}" />
+          <a href="{{project.url}}">
+            <img src="assets/img/Portafolio/caratulas/{{project.url_photo}}" />
+          </a>
           <ion-card-header>
-            <ion-card-title>{{ project.name }}</ion-card-title>
+            <ion-card-title class="text-c">{{ project.name }}</ion-card-title>
           </ion-card-header>
-          <ion-card-content>
+          <ion-card-content class="text-c">
             <ng-container *ngFor="let skill of project.skills">
-              <ion-chip>{{ skill }}</ion-chip>
+              <ion-chip color="primary">{{ skill }}</ion-chip>
             </ng-container>
           </ion-card-content>
         </ion-card>
