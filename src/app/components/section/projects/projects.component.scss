@@ -1,0 +1,36 @@
+.info-card {
+  width: 70%;
+
+  ion-card {
+    box-shadow: 0px 11px 12px #ebe9f3;
+
+    .list-skills {
+      text-align: center;
+
+      .item-inner {
+        padding: unset;
+      }
+
+      ion-label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+          margin-right: 10px;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  ion-card:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@media all and (max-width: 992px) {
+  .info-card {
+    width: 90%;
+  }
+}

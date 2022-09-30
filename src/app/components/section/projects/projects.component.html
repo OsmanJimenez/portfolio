@@ -1,3 +1,21 @@
-<p>
-  projects works!
-</p>
+<ion-title>Proyectos</ion-title>
+
+<ion-grid class="info-card">
+  <ion-row>
+    <ng-container *ngFor="let project of projects">
+      <ion-col size-xs="12" size-sm="6" size-md="4" size-lg="3" size-xl="3">
+        <ion-card>
+          <img [src]="project.url_photo" />
+          <ion-card-header>
+            <ion-card-title>{{ project.name }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ng-container *ngFor="let skill of project.skills">
+              <ion-chip>{{ skill }}</ion-chip>
+            </ng-container>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ng-container>
+  </ion-row>
+</ion-grid>
