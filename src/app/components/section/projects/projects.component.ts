@@ -40,7 +40,7 @@ export class ProjectsComponent implements OnInit {
       skills: ['Bootstrap', 'HTML5', 'JavaScript'],
     },
     {
-      url_photo: 'Realidad_Virtual.webp',
+      url_photo: 'Template_A-frame.webp',
       name: 'Realidad Virtual',
       url: 'https://github.com/OsmanJimenez?tab=repositories&q=Aframe&type=&language=&sort=',
       skills: ['A-Frame', 'HTML5', 'CSS3', 'JavaScript'],
