@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent implements OnInit {
-  projects = [
+  projects: any = [
     {
       url_photo: '01_Tarjetas_Arrastrables.webp',
       name: 'Tarjetas Arrastables',
@@ -173,5 +173,16 @@ export class ProjectsComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.addProperty()
+  }
+
+  addProperty(){
+     this.projects = this.projects.map((i) => {
+      i.point =  Math.floor(Math.random() * 100);;
+      return i;
+    });
+    this.projects.sort(((a, b) => a.point - b.point));
+  }
+
 }
