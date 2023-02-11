@@ -25,6 +25,11 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+
+ion-content{
+  --background: linear-gradient(to top, #141414, #1a1a1a, #202020, #262625, #2c2c2b);
+}
+
 .text-c {
   text-align: center;
 }
@@ -32,6 +37,11 @@
 ion-title {
   text-align: center;
   margin-top: 24px;
+  color: #ffffff;
+}
+
+ion-card-title{
+  color: #ffffff;
 }
 
 app-navbar {
@@ -67,5 +77,5 @@ app-navbar {
 app-card-profile {
   display: flex;
   justify-content: center;
-  margin-top: -5vh;
+  margin-top: 25px;
 }

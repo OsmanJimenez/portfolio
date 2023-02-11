@@ -3,10 +3,11 @@
 <ion-grid class="info-card">
   <ion-row>
     <ng-container *ngFor="let skill of skills">
-      <ion-col size-xs="12" size-sm="6" size-md="4" size-lg="3" size-xl="2">
+      <ion-col size-xs="12" size-sm="6" size-md="4" size-lg="4" size-xl="3">
         <ion-card>
+            <i [class]="skill.icon"></i>
           <ion-item lines="none" class="list-skills">
-            <ion-label><i [class]="skill.icon"></i> {{ skill.name }}</ion-label>
+            <ion-label> {{ skill.name }}</ion-label>
           </ion-item>
         </ion-card>
       </ion-col>

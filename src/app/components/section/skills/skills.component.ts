@@ -8,10 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class SkillsComponent implements OnInit {
   skills = [
     {
-      icon: 'devicon-bash-plain colored',
-      name: '.Env',
-    },
-    {
       icon: 'devicon-ansible-plain colored',
       name: 'A-Frame',
     },
