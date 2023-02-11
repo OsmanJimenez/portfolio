@@ -84,7 +84,3 @@ ng build --prod
 
 // Compilar aplicación en otra ruta
 ng build --configuration production --output-path=public/ --optimization
-
-// Para cambiar el targetSDKVersion, modificar android/variables.gradle
-compileSdkVersion = 30
-targetSdkVersion = 30
