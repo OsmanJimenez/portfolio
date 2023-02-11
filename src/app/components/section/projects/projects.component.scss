@@ -1,11 +1,12 @@
 .info-card {
-  width: 70%;
+  width: 80%;
 
   ion-card {
     height: 95%;
-    box-shadow: 0px 11px 12px #242424;
+    box-shadow: 0px 11px 12px #141414;
+    background: transparent;
 
-    img{
+    img {
       min-height: 224px;
     }
   }
