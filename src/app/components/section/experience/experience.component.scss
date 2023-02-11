@@ -5,11 +5,12 @@ ion-col {
 
 ion-accordion-group {
   width: 80%;
+  max-width: 1200px;
   margin-top: 20px;
 
   ion-accordion {
     background: transparent;
-    box-shadow: 0px 11px 12px #141414;
+    box-shadow: 0px 11px 12px #151814;
     border-radius: 16px;
     margin-bottom: 32px;
 
@@ -30,8 +31,24 @@ ion-accordion-group {
   ion-card {
     margin: 0px;
     background: #272726;
+    width: 100%;
+
+    .title {
+      font-size: 28px;
+      color: #b7f397;
+      margin-bottom: 0px;
+      margin-left: 16px;
+    }
+
+    .description-business {
+      margin-top: -20px;
+      margin-left: 18px;
+      font-size: 18px;
+    }
 
     .description {
+      margin-top: 16px;
+      
       ul {
         margin-top: 10px;
       }

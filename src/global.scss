@@ -50,7 +50,7 @@ div[slot="content"] {
 ion-content {
   --background: linear-gradient(
     to top,
-    #141414,
+    #151814,
     #1a1a1a,
     #202020,
     #262625,
@@ -67,6 +67,18 @@ ion-title {
   margin-top: 72px;
   color: #ffffff;
   font-size: 36px;
+}
+
+ion-col {
+  display: flex;
+  justify-content: center;
+}
+
+ion-card {
+  background: transparent;
+  box-shadow: 0px 11px 12px #151814;
+  width: 80%;
+  max-width: 1200px;
 }
 
 ion-card-title {
@@ -114,9 +126,27 @@ app-card-profile {
   justify-content: center;
 
   .bar {
-    background: green;
+    background: #b7f397;
     height: 10px;
     border-radius: 16px;
     margin-bottom: 24px;
   }
+}
+
+ion-chip.ion-color.ion-color-success.md.ion-activatable.hydrated {
+  color: #aed285;
+  background: #45483f;
+}
+
+.display-block {
+  display: block !important;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #aed285;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }

@@ -1,3 +1,4 @@
+import { FooterComponent } from './footer/footer.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
@@ -25,6 +26,7 @@ registerLocaleData(es);
     ToolsComponent,
     ExperienceComponent,
     ProjectsComponent,
+    FooterComponent,
   ],
   exports: [
     ToolbarComponent,
@@ -34,6 +36,7 @@ registerLocaleData(es);
     ToolsComponent,
     ExperienceComponent,
     ProjectsComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,

@@ -8,40 +8,74 @@ import { Component, OnInit } from '@angular/core';
 export class ToolsComponent implements OnInit {
   tools = [
     {
-      icon: 'devicon-vscode-plain colored',
-      name: 'VSCode',
+      icon: '',
+      src: 'adobe-xd.svg',
+      name: 'Adobe XD',
+    },
+    {
+      icon: '',
+      src: 'bitbucket.svg',
+      name: 'Bitbuquet',
+    },
+    {
+      icon: '',
+      src: 'clicdata-logo.webp',
+      name: 'Clic Data',
+    },
+    {
+      icon: '',
+      src: 'draw-io.png',
+      name: 'Draw.io',
+    },
+    {
+      icon: '',
+      src: 'figma.svg',
+      name: 'Figma',
     },
     {
       icon: 'devicon-jira-plain colored',
+      src: '',
       name: 'Jira',
     },
     {
-      icon: 'devicon-gitlab-plain colored',
+      icon: '',
+      src: 'gitlab.svg',
       name: 'GitLab',
     },
     {
-      icon: 'devicon-github-plain colored',
+      icon: '',
+      src: 'github.svg',
       name: 'GitHub',
     },
     {
+      icon: '',
+      src: 'sql-server.webp',
+      name: 'SQL Server',
+    },
+    {
       icon: 'devicon-wordpress-plain colored',
+      src: '',
       name: 'Wordpress',
     },
     {
       icon: 'devicon-windows8-original colored',
+      src: '',
       name: 'Windows',
     },
     {
       icon: 'devicon-ubuntu-plain colored',
+      src: '',
       name: 'Ubuntu',
     },
     {
-      icon: 'devicon-fastapi-plain colored',
+      icon: '',
+      src: 'postman.svg',
       name: 'Postman',
     },
     {
-      icon: 'devicon-minitab-plain colored',
-      name: 'Clic Data',
+      icon: 'devicon-vscode-plain colored',
+      src: '',
+      name: 'VSCode',
     },
   ];
   constructor() {}

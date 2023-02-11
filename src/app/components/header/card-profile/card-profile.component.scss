@@ -1,20 +1,22 @@
 ion-card {
-  background: transparent;
-  box-shadow: 0px 11px 12px #141414;
-  width: 80%;
-
   .profile {
-    display: flex;
+    display: flex !important;
     justify-content: center;
   }
 
   ion-col {
     padding: 16px;
     text-align: justify;
+    display: block !important;
 
     ion-card-title {
-      padding-bottom: 16px;
       font-size: 36px;
+    }
+
+    ion-card-subtitle {
+      padding-bottom: 16px;
+      font-size: 24px;
+      color: #aed285;
     }
 
     .description {
@@ -30,6 +32,8 @@ ion-card {
         height: 40px;
         width: 40px;
         margin: 16px 12px 0px 0px;
+        background: #aed285;
+        color: #1d4f45;
       }
     }
 

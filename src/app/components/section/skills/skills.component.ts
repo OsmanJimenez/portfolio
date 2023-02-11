@@ -8,79 +8,93 @@ import { Component, OnInit } from '@angular/core';
 export class SkillsComponent implements OnInit {
   skills = [
     {
-      icon: 'devicon-ansible-plain colored',
-      name: 'A-Frame',
-    },
-    {
-      icon: 'devicon-angularjs-plain colored',
+      icon: '',
+      src: 'angular.svg',
       name: 'Angular',
     },
     {
-      icon: 'devicon-fsharp-plain colored',
+      icon: '',
+      src: 'ng-zorro.svg',
       name: 'Ant Design',
     },
     {
-      icon: 'devicon-bootstrap-plain colored',
+      icon: '',
+      src: 'bootstrap.svg',
       name: 'Bootstrap',
     },
     {
-      icon: 'devicon-embeddedc-plain colored',
+      icon: '',
+      src: 'capacitor-js.svg',
       name: 'Capacitor',
     },
     {
-      icon: 'devicon-csharp-plain colored',
+      icon: '',
+      src: 'c-sharp.svg',
       name: 'C#',
     },
     {
-      icon: 'devicon-css3-plain colored',
+      icon: '',
+      src: 'css3.svg',
       name: 'CSS3',
     },
     {
       icon: 'devicon-html5-plain colored',
+      src: 'html5.svg',
       name: 'HTML5',
     },
     {
       icon: 'devicon-git-plain colored',
+      src: '',
       name: 'Git',
     },
     {
       icon: 'devicon-ionic-original colored',
+      src: '',
       name: 'Ionic',
     },
     {
       icon: 'devicon-javascript-plain colored',
+      src: '',
       name: 'JavaScript',
     },
     {
       icon: 'devicon-laravel-plain colored',
+      src: '',
       name: 'Laravel',
     },
     {
       icon: 'devicon-markdown-original colored',
+      src: '',
       name: 'Markdown',
     },
     {
       icon: 'devicon-microsoftsqlserver-plain colored',
+      src: '',
       name: 'Microsoft Sql Server',
     },
     {
       icon: 'devicon-mysql-plain colored',
+      src: '',
       name: 'MySql',
     },
     {
       icon: 'devicon-dotnetcore-plain colored',
+      src: '',
       name: '.Net',
     },
     {
-      icon: 'devicon-python-plain colored',
+      icon: '',
+      src: 'python.svg',
       name: 'Python',
     },
     {
-      icon: 'devicon-shopware-original colored',
+      icon: '',
+      src: 'pwa.png',
       name: 'PWA',
     },
     {
       icon: 'devicon-typescript-plain colored',
+      src: '',
       name: 'TypeScript',
     },
   ];

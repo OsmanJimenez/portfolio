@@ -1,18 +1,24 @@
 .info-card {
   width: 80%;
+  max-width: 1200px;
 
-  ion-card {
-    height: 95%;
-    box-shadow: 0px 11px 12px #141414;
-    background: transparent;
+  ion-col {
+    margin-bottom: 24px;
 
-    img {
-      min-height: 224px;
+    ion-card {
+      height: 95%;
+      width: 90%;
+      box-shadow: 0px 11px 12px #151814;
+      background: transparent;
+
+      img {
+        min-height: 224px;
+      }
     }
-  }
 
-  ion-card:hover {
-    transform: translateY(-2px);
+    ion-card:hover {
+      transform: translateY(-2px);
+    }
   }
 }
 
