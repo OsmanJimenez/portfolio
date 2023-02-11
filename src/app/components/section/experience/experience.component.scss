@@ -7,6 +7,21 @@ ion-accordion-group {
   width: 70%;
   margin-top: 20px;
 
+  ion-accordion {
+    background: transparent;
+    box-shadow: 0px 11px 12px #141414;
+    border-radius: 16px;
+    margin-bottom: 32px;
+
+    ion-label {
+      font-size: 20px;
+    }
+
+    .description {
+      font-size: 18px;
+    }
+  }
+
   .header {
     border-radius: 15px;
     margin: 10px 0px;
@@ -14,6 +29,7 @@ ion-accordion-group {
 
   ion-card {
     margin: 0px;
+    background: #272726;
 
     .description {
       ul {

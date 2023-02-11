@@ -25,9 +25,37 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+:root {
+  --ion-color-transparent: transparent;
+  --ion-color-transparent-rgb: 254, 205, 211;
+  --ion-color-transparent-contrast: #fff;
+  --ion-color-transparent-contrast-rgb: 0, 0, 0;
+  --ion-color-transparent-shade: transparent;
+  --ion-color-transparent-tint: transparent;
+}
 
-ion-content{
-  --background: linear-gradient(to top, #141414, #1a1a1a, #202020, #262625, #2c2c2b);
+.ion-color-transparent {
+  --ion-color-base: var(--ion-color-transparent);
+  --ion-color-base-rgb: var(--ion-color-transparent-rgb);
+  --ion-color-contrast: var(--ion-color-transparent-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-transparent-contrast-rgb);
+  --ion-color-shade: var(--ion-color-transparent-shade);
+  --ion-color-tint: var(--ion-color-transparent-tint);
+}
+
+div[slot="content"] {
+  background: rgba(var(--ion-color-transparent-rgb), 0.25);
+}
+
+ion-content {
+  --background: linear-gradient(
+    to top,
+    #141414,
+    #1a1a1a,
+    #202020,
+    #262625,
+    #2c2c2b
+  );
 }
 
 .text-c {
@@ -36,11 +64,12 @@ ion-content{
 
 ion-title {
   text-align: center;
-  margin-top: 24px;
+  margin-top: 72px;
   color: #ffffff;
+  font-size: 36px;
 }
 
-ion-card-title{
+ion-card-title {
   color: #ffffff;
 }
 
@@ -78,4 +107,16 @@ app-card-profile {
   display: flex;
   justify-content: center;
   margin-top: 25px;
+}
+
+.subtitle-separator {
+  display: flex;
+  justify-content: center;
+
+  .bar {
+    background: green;
+    height: 10px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+  }
 }

@@ -1,12 +1,16 @@
 <ion-title>Herramientas</ion-title>
+<div class="subtitle-separator">
+  <div class="bar" style="width: 260px"></div>
+</div>
 
 <ion-grid class="info-card">
   <ion-row>
     <ng-container *ngFor="let tool of tools">
-      <ion-col size-xs="12" size-sm="6" size-md="4" size-lg="3" size-xl="2">
+      <ion-col size-xs="12" size-sm="6" size-md="4" size-lg="4" size-xl="3">
         <ion-card>
+          <i [class]="tool.icon"></i>
           <ion-item lines="none" class="list-tools">
-            <ion-label><i [class]="tool.icon"></i> {{ tool.name }}</ion-label>
+            <ion-label> {{ tool.name }}</ion-label>
           </ion-item>
         </ion-card>
       </ion-col>
