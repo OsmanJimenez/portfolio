@@ -1,69 +1,72 @@
-ion-col {
+.experience-section {
+  --background: transparent;
+  padding: 16px;
   display: flex;
   justify-content: center;
-}
-
-ion-accordion-group {
-  width: 80%;
-  max-width: 1200px;
-  margin-top: 20px;
-
-  ion-accordion {
-    background: transparent;
-    box-shadow: 0px 11px 12px #151814;
-    border-radius: 16px;
-    margin-bottom: 32px;
-
-    ion-label {
-      font-size: 20px;
-    }
-
-    .description {
-      font-size: 18px;
-    }
-  }
-
-  .header {
-    border-radius: 15px;
-    margin: 10px 0px;
-  }
+  align-items: center;
 
   ion-card {
-    margin: 0px;
-    background: #272726;
-    width: 100%;
+    box-shadow: 0px 11px 12px #151814;
+    --background: transparent;
+    padding-top: 24px;
 
-    .title {
-      font-size: 28px;
-      color: #b7f397;
-      margin-bottom: 0px;
-      margin-left: 16px;
+    .col-date {
+      padding: 10px 24px;
     }
 
-    .description-business {
-      margin-top: -20px;
-      margin-left: 18px;
-      font-size: 18px;
+    .date {
+      font-size: 16px;
     }
 
-    .description {
-      margin-top: 16px;
-      
-      ul {
-        margin-top: 10px;
+    ion-card-content {
+      padding-top: 0px;
+
+      h2 {
+        font-size: 24px;
+        color: #aed285;
       }
-    }
 
-    img {
-      border-radius: 15px;
-      max-width: 150px;
-      max-height: 150px;
+      h3 {
+        font-size: 18px;
+        color: #d4ddca;
+      }
+
+      h4 {
+        font-size: 16px;
+        color: #979797;
+      }
+
+      .skills-section {
+        margin-top: 16px;
+      }
+
+      .list-skills {
+        text-align: center;
+        --background: transparent;
+
+        .item-inner {
+          padding: unset;
+        }
+
+        ion-label {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+        }
+      }
+
+
     }
+  }
+
+  ion-card:hover {
+    transform: translateY(-2px);
   }
 }
 
 @media all and (max-width: 992px) {
-  ion-accordion-group {
+  .info-card {
     width: 90%;
   }
 }
