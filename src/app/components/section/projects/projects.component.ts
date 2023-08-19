@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectsService } from 'src/app/services/section/projects/projects.service';
+import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-projects',
@@ -33,5 +34,12 @@ export class ProjectsComponent implements OnInit {
     });
     this.projects.sort(((a, b) => a.point - b.point));
   }
+
+  viewAll = false;
+
+  viewMore() {
+    this.viewAll = true;
+  }
+
 
 }
