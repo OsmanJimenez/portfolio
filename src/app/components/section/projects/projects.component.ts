@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectsService } from 'src/app/services/section/projects/projects.service';
+import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-projects',
@@ -39,5 +40,6 @@ export class ProjectsComponent implements OnInit {
   viewMore() {
     this.viewAll = true;
   }
+
 
 }
