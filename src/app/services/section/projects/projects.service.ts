@@ -9,7 +9,7 @@ import mockProjects from 'src/app/mocks/projects.mock.json';
 export class ProjectsService {
 
   constructor() { }
-  getCertificate(): Observable<any> {
+  get(): Observable<any> {
     // Simula una petición HTTP y devuelve el mock JSON
     return of(mockProjects).pipe(
       catchError(error => {

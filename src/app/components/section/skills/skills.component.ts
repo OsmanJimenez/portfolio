@@ -16,7 +16,7 @@ export class SkillsComponent implements OnInit {
   }
 
   loadSkills() {
-    this.skillsService.getCertificate().subscribe(
+    this.skillsService.get().subscribe(
       res => {
         if (res) {
           this.skills = res;

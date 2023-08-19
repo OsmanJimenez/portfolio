@@ -16,7 +16,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   loadProjects() {
-    this.projectsService.getCertificate().subscribe(
+    this.projectsService.get().subscribe(
       res => {
         if (res) {
           this.projects = res;

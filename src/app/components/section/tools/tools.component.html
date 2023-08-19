@@ -6,7 +6,7 @@
 <ion-grid class="info-card">
   <ion-row>
     <ng-container *ngFor="let tool of tools">
-      <ion-col size-xs="12" size-sm="6" size-md="4" size-lg="4" size-xl="3">
+      <ion-col size-xs="6" size-sm="6" size-md="4" size-lg="4" size-xl="3">
         <ion-card>
           <i [class]="tool.icon" *ngIf="tool.icon !== ''"></i>
           <img src="assets/icons/{{ tool.src }}" *ngIf="tool.icon === ''" />
