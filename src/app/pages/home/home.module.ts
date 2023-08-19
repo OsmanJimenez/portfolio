@@ -19,4 +19,4 @@ import { ComponentsModule } from 'src/app/components/components.module';
   ],
   declarations: [HomePage]
 })
-export class HomePageModule {}
+export class HomePageModule { }
