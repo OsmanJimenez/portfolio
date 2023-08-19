@@ -34,4 +34,10 @@ export class ProjectsComponent implements OnInit {
     this.projects.sort(((a, b) => a.point - b.point));
   }
 
+  viewAll = false;
+
+  viewMore() {
+    this.viewAll = true;
+  }
+
 }
