@@ -1,0 +1,29 @@
+[
+    {
+        "job_position": "Desarrollador FullStack Senior",
+        "working_period": "Feb 2021 - Actualmente",
+        "job_enterprice": "TBTB GLOBAL",
+        "job_enterprice_img": "https://pbs.twimg.com/profile_images/860196618209042432/KifSpWpu_400x400.jpg",
+        "job_enterprice_link": "https://tbtb.global/",
+        "description-business": "Somos TBTB Global, una empresa dedicada a ayudar a otras empresas a mejorar sus negocios y el estilo de vida de los pacientes que padecen cáncer y enfermedades raras.",
+        "job_description": "Mi destacado desempeño en la organización me ha permitido consolidar habilidades en IT tras un exitoso ascenso. He liderado proyectos impactantes en Suramérica, implementado metodologías ágiles como Scrum y XP, y fortalecido la seguridad con OWASP. Desde la creación de documentación de alta calidad hasta la mejora de proyectos con Clean Code, he demostrado compromiso con la excelencia. Diseños cautivadores en Adobe XD, aplicaciones multiplataforma, autenticación biométrica y API's REST son solo algunas áreas donde he dejado mi marca. Cada desafío tecnológico es una oportunidad para impulsar la innovación y transformar ideas en realidad."
+    },
+    {
+        "job_position": "Desarrollador FullStack",
+        "working_period": "Feb 2020 - Feb 2021",
+        "job_enterprice": "TBTB GLOBAL",
+        "job_enterprice_img": "https://pbs.twimg.com/profile_images/860196618209042432/KifSpWpu_400x400.jpg",
+        "job_enterprice_link": "https://tbtb.global/",
+        "description-business": "Somos TBTB Global, una empresa dedicada a ayudar a otras empresas a mejorar sus negocios y el estilo de vida de los pacientes que padecen cáncer y enfermedades raras.",
+        "job_description": "Aprovechando mis conocimientos y habilidades, he sido un catalizador de soluciones en línea con las necesidades de la empresa, emergiendo como un destacado intérprete en múltiples frentes. Mi trayectoria se ha centrado en la optimización de procesos para potenciar la lógica funcional del software, la creación de experiencias cautivadoras en diseño UI & UX, el desarrollo versátil de aplicaciones multiplataforma abarcando Web, iOS y Android, así como el fortalecimiento de funciones relacionadas con la autenticación biométrica. Además, he dejado huella al diseñar y implementar eficaces API's REST, construir dinámicos dashboards interactivos y establecer bases de datos relacionales de alto rendimiento. Mi compromiso con estándares de calidad y buenas prácticas se refleja en cada paso del desarrollo, donde la aplicación ágil de metodologías impulsa resultados aún más impactantes."
+    },
+        {
+        "job_position": "Desarrollador FullStack",
+        "working_period": "Jun 2020 - Dic 2020",
+        "job_enterprice": "Universidad de Cundinamarca - Tesis",
+        "job_enterprice_img": "https://pbs.twimg.com/profile_images/860196618209042432/KifSpWpu_400x400.jpg",
+        "job_enterprice_link": "https://www.ucundinamarca.edu.co/",
+        "description-business": "Somos TBTB Global, una empresa dedicada a ayudar a otras empresas a mejorar sus negocios y el estilo de vida de los pacientes que padecen cáncer y enfermedades raras.",
+        "job_description": "Como culminación de mi trayectoria académica en la Universidad de Cundinamarca, me sumergí en la creación de una asombrosa aplicación multiplataforma. Este proyecto de envergadura trae consigo un recorrido innovador por los tesoros turísticos de Fusagasugá. ¿La clave? Sumergirse en una experiencia de realidad virtual que revela secretos y encantos. El corazón de este logro reside en una Aplicación Web Progresiva (PWA) que se funde con un administrador, ofreciendo no solo información, sino también un análisis enriquecedor de cada rincón destacado. Un viaje más allá de lo convencional, es un placer presentar esta iniciativa que desafía los límites de la exploración y la tecnología."
+    }
+]
