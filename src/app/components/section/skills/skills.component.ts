@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SkillsService } from 'src/app/services/section/skills.service';
+import { SkillsService } from 'src/app/services/section/skills/skills.service';
 
 @Component({
   selector: 'app-skills',
@@ -12,6 +12,10 @@ export class SkillsComponent implements OnInit {
   constructor(private skillsService: SkillsService) { }
 
   ngOnInit() {
+    this.loadSkills()
+  }
+
+  loadSkills() {
     this.skillsService.getCertificate().subscribe(
       res => {
         if (res) {
