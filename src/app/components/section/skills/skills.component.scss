@@ -5,18 +5,22 @@
   padding: 16px;
 
   ion-card {
-    box-shadow: 0px 11px 12px #151814;
     --background: transparent;
     text-align: center;
-    margin: 16px 4px;
-    padding-top: 24px;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
 
     i {
-      font-size: 64px;
+      font-size: 26px;
     }
 
     img {
-      width: 66px !important;
+      width: 24px !important;
     }
 
     .list-skills {
@@ -36,13 +40,18 @@
     }
   }
 
-  ion-card:hover {
-    transform: translateY(-2px);
-  }
 }
 
 @media all and (max-width: 992px) {
   .info-card {
     width: 90%;
+  }
+}
+
+@media all and (max-width: 512px) {
+  ion-card {
+    width: 90%;
+    display: list-item !important;
+    padding-top: 18px !important;
   }
 }

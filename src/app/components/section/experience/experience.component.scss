@@ -6,7 +6,6 @@
   align-items: center;
 
   ion-card {
-    box-shadow: 0px 11px 12px #151814;
     --background: transparent;
     padding-top: 24px;
 
@@ -60,9 +59,7 @@
     }
   }
 
-  ion-card:hover {
-    transform: translateY(-2px);
-  }
+
 }
 
 @media all and (max-width: 992px) {

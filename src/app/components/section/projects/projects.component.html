@@ -5,7 +5,7 @@
 
 <ion-grid class="info-card">
   <ion-row>
-    <ng-container *ngFor="let project of (viewAll ? projects : projects.slice(0, 6))">
+    <ng-container *ngFor="let project of pagedProjects">
       <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="4">
         <ion-card>
           <a href="{{ project.url }}" attr.aria-label="{{ project.name }} | Osman Armando Jimenez Cortes">
@@ -24,10 +24,20 @@
       </ion-col>
     </ng-container>
   </ion-row>
-  <div class="centered-button">
-    <button *ngIf="projects.length > 6 && !viewAll" (click)="viewMore()" class="button-full">
-      Ver más
-    </button>
-  </div>
-
 </ion-grid>
+
+<ul class="pagination">
+  <li class="page-item" [class.disabled]="currentPage === 1">
+    <a class="page-link" (click)="changePage(currentPage - 1)" aria-label="Anterior">
+      <span aria-hidden="true">&laquo;</span>
+    </a>
+  </li>
+  <li class="page-item" *ngFor="let page of pages" [class.active]="page === currentPage">
+    <a class="page-link" (click)="changePage(page)">{{ page }}</a>
+  </li>
+  <li class="page-item" [class.disabled]="currentPage === totalPages">
+    <a class="page-link" (click)="changePage(currentPage + 1)" aria-label="Siguiente">
+      <span aria-hidden="true">&raquo;</span>
+    </a>
+  </li>
+</ul>
