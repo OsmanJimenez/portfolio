@@ -33,6 +33,57 @@
   }
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 60px;
+
+  a.page-link {
+    background: transparent;
+    border: solid 0px;
+  }
+
+  li::before {
+    display: none !important;
+  }
+
+  .page-link {
+    color: #aed285;
+    margin: 0px 4px;
+  }
+
+  .page-link:hover {
+    color: #aed285;
+    background-color: #495057;
+    border-radius: 50%;
+    box-shadow: 0px 11px 12px #151814;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  }
+
+  .page-link:not(:hover) {
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    box-shadow: none;
+    border-radius: 50%;
+    background: none;
+  }
+
+  .active>.page-link,
+  .page-link.active {
+    z-index: 3;
+    color: #aed285;
+    background-color: #495057;
+    border-color: #495057;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media all and (max-width: 992px) {
   .info-card {
     width: 90%;
