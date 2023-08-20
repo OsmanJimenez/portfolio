@@ -9,7 +9,8 @@
       <ion-col size-xs="6" size-sm="6" size-md="4" size-lg="3" size-xl="2">
         <ion-card>
           <i [class]="tool.icon" *ngIf="tool.icon !== ''"></i>
-          <img src="assets/icons/{{ tool.src }}" *ngIf="tool.icon === ''" />
+          <img src="assets/icons/{{ tool.src }}" *ngIf="tool.icon === ''"
+            alt="{{ tool.name }} | Osman Armando Jimenez Cortes" />
           <ion-item lines="none" class="list-tools">
             <ion-label> {{ tool.name }}</ion-label>
           </ion-item>
