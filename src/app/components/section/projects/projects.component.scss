@@ -8,7 +8,6 @@
     ion-card {
       height: 95%;
       width: 90%;
-      box-shadow: 0px 11px 12px #151814;
       background: transparent;
 
       img {
@@ -16,9 +15,6 @@
       }
     }
 
-    ion-card:hover {
-      transform: translateY(-2px);
-    }
   }
 }
 

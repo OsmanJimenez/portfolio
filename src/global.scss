@@ -48,14 +48,12 @@ div[slot="content"] {
 }
 
 ion-content {
-  --background: linear-gradient(
-    to top,
-    #151814,
-    #1a1a1a,
-    #202020,
-    #262625,
-    #2c2c2b
-  );
+  --background: linear-gradient(to top,
+      #151814,
+      #1a1a1a,
+      #202020,
+      #262625,
+      #2c2c2b);
 }
 
 .text-c {
@@ -76,7 +74,7 @@ ion-col {
 
 ion-card {
   background: transparent;
-  box-shadow: 0px 11px 12px #151814;
+  box-shadow: none;
   width: 80%;
   max-width: 1200px;
 }
@@ -149,4 +147,10 @@ ul li::before {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+
+ion-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 11px 12px #151814;
+  background: #717a6708;
 }
