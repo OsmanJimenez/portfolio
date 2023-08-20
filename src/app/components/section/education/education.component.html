@@ -1,3 +1,43 @@
-<p>
-  education works!
-</p>
+<ion-title>Educación</ion-title>
+<div class="subtitle-separator">
+  <div class="bar" style="width: 200px"></div>
+</div>
+
+<ion-grid class="info-card">
+  <ion-row>
+    <ng-container *ngFor="let project of pagedProjects">
+      <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="4">
+        <ion-card>
+          <a href="{{ project.url }}" attr.aria-label="{{ project.name }} | Osman Armando Jimenez Cortes">
+            <img src="assets/img/Portafolio/caratulas/{{ project.url_photo }}"
+              alt="{{ project.name }} | Osman Armando Jimenez Cortes" />
+          </a>
+          <ion-card-header>
+            <ion-card-title class="text-c">{{ project.name }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="text-c">
+            <ng-container *ngFor="let skill of project.skills">
+              <ion-chip color="success">{{ skill }}</ion-chip>
+            </ng-container>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ng-container>
+  </ion-row>
+</ion-grid>
+
+<ul class="pagination">
+  <li class="page-item" [class.disabled]="currentPage === 1">
+    <a class="page-link" href="#" (click)="changePage(currentPage - 1)" aria-label="Anterior">
+      <span aria-hidden="true">&laquo;</span>
+    </a>
+  </li>
+  <li class="page-item" *ngFor="let page of pages" [class.active]="page === currentPage">
+    <a class="page-link" href="#" (click)="changePage(page)">{{ page }}</a>
+  </li>
+  <li class="page-item" [class.disabled]="currentPage === totalPages">
+    <a class="page-link" href="#" (click)="changePage(currentPage + 1)" aria-label="Siguiente">
+      <span aria-hidden="true">&raquo;</span>
+    </a>
+  </li>
+</ul>
