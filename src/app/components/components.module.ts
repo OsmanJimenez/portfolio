@@ -14,6 +14,7 @@ import { SkillsComponent } from './section/skills/skills.component';
 import { ToolsComponent } from './section/tools/tools.component';
 import { ExperienceComponent } from './section/experience/experience.component';
 import { ProjectsComponent } from './section/projects/projects.component';
+import { EducationComponent } from './section/education/education.component';
 
 registerLocaleData(es);
 
@@ -27,6 +28,7 @@ registerLocaleData(es);
     ExperienceComponent,
     ProjectsComponent,
     FooterComponent,
+    EducationComponent
   ],
   exports: [
     ToolbarComponent,
@@ -37,6 +39,7 @@ registerLocaleData(es);
     ExperienceComponent,
     ProjectsComponent,
     FooterComponent,
+    EducationComponent
   ],
   imports: [
     CommonModule,
@@ -46,4 +49,4 @@ registerLocaleData(es);
     ReactiveFormsModule,
   ],
 })
-export class ComponentsModule {}
+export class ComponentsModule { }
