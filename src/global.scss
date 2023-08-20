@@ -153,4 +153,12 @@ ion-card:hover {
   transform: translateY(-2px);
   box-shadow: 0px 11px 12px #151814;
   background: #717a6708;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+ion-card:not(:hover) {
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  transform: translateY(0);
+  box-shadow: none;
+  background: none;
 }
