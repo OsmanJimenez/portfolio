@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EducationService } from 'src/app/services/section/education/education.service';
+import { ArchivementsService } from 'src/app/services/section/achievements/archivements.service';
 
 @Component({
   selector: 'app-achievements',
@@ -7,19 +7,19 @@ import { EducationService } from 'src/app/services/section/education/education.s
   styleUrls: ['./achievements.component.scss'],
 })
 export class AchievementsComponent implements OnInit {
-  educations: any[] = []; // Tu arreglo de proyectos
+  achievements: any[] = []; // Tu arreglo de proyectos
 
-  constructor(private educationService: EducationService) { }
+  constructor(private achievementsService: ArchivementsService) { }
 
   ngOnInit() {
-    this.loadEducation();
+    this.loadAchievements();
   }
 
-  loadEducation() {
-    this.educationService.get().subscribe(
+  loadAchievements() {
+    this.achievementsService.get().subscribe(
       (res) => {
         if (res) {
-          this.educations = res;
+          this.achievements = res;
 
         }
       }

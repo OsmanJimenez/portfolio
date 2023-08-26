@@ -22,12 +22,6 @@
         "src": "angular",
         "name": "Yolo",
         "platform": "GitHub"
-    },
-     {
-        "icon": "olimpiadas-tbtb-global.png",
-        "src": "angular",
-        "name": "Primer puesto Olimpiadas 2022",
-        "platform": "TBTB Global"
     }
 
 ]
