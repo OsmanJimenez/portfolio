@@ -1,0 +1,30 @@
+<ion-title>Educación</ion-title>
+<div class="subtitle-separator">
+  <div class="bar" style="width: 200px"></div>
+</div>
+
+<ion-grid class="info-card">
+  <ion-row>
+    <ng-container *ngFor="let education of educations">
+      <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="4">
+        <div class="card work">
+          <div class="img-section {{ education.color }}">
+
+            <img src="assets/icons/{{ education.logo }}" height="77" width="76"
+              alt="{{ education.name }} |Osman Armando Jimenez Cortes" />
+          </div>
+          <div class="card-desc">
+            <div class="card-header">
+              <div class="card-title">{{ education.date }}</div>
+
+            </div>
+            <div class="card-time">{{ education.name }}</div>
+            <p class="recent">{{ education.institution }}</p>
+          </div>
+        </div>
+      </ion-col>
+    </ng-container>
+  </ion-row>
+</ion-grid>
+
+

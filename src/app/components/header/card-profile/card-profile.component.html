@@ -2,18 +2,9 @@
   <ion-card-content>
     <ion-grid class="ion-no-padding">
       <ion-row>
-        <ion-col
-          size-xs="12"
-          size-sm="12"
-          size-md="12"
-          size-lg="8"
-          size-xl="8"
-          class="description"
-        >
+        <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="8" size-xl="8" class="description">
           <ion-card-title>Hola soy Osman Jimenez</ion-card-title>
-          <ion-card-subtitle
-            >Desarrollador FullStack | Ingeniero de Sistemas</ion-card-subtitle
-          >
+          <ion-card-subtitle>Desarrollador FullStack | Ingeniero de Sistemas</ion-card-subtitle>
           <ion-label class="description">
             Me especializo en el ámbito del desarrollo web, con más destreza en
             el diseño de interfaces graficas (UX y UI) aunque también poseo
@@ -27,26 +18,17 @@
 
           <div class="social-media-links">
             <ng-container *ngFor="let social of iconSocial">
-              <a href="{{ social.link }}" target="_blank">
-                <button [class]="social.icon">
+              <a href="{{ social.link }}" target="_blank"
+                attr.aria-label="{{ social.icon }} | Osman Armando Jimenez Cortes">
+                <button [class]="social.icon" attr.aria-label="{{ social.icon }} | Osman Armando Jimenez Cortes">
                   <ion-icon slot="icon-only" [name]="social.icon"></ion-icon>
                 </button>
               </a>
             </ng-container>
           </div>
         </ion-col>
-        <ion-col
-          size-xs="12"
-          size-sm="12"
-          size-md="12"
-          size-lg="4"
-          size-xl="4"
-          class="profile"
-        >
-          <img
-            src="assets/img/header/profile.webp"
-            alt="Osman Armando Jimenez Cortes"
-          />
+        <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="4" size-xl="4" class="profile">
+          <img src="assets/img/header/profile.webp" alt="Osman Armando Jimenez Cortes" />
         </ion-col>
       </ion-row>
     </ion-grid>
