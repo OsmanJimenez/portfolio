@@ -15,6 +15,7 @@ import { ToolsComponent } from './section/tools/tools.component';
 import { ExperienceComponent } from './section/experience/experience.component';
 import { ProjectsComponent } from './section/projects/projects.component';
 import { EducationComponent } from './section/education/education.component';
+import { AchievementsComponent } from './section/achievements/achievements.component';
 
 registerLocaleData(es);
 
@@ -28,7 +29,8 @@ registerLocaleData(es);
     ExperienceComponent,
     ProjectsComponent,
     FooterComponent,
-    EducationComponent
+    EducationComponent,
+    AchievementsComponent
   ],
   exports: [
     ToolbarComponent,
@@ -39,7 +41,8 @@ registerLocaleData(es);
     ExperienceComponent,
     ProjectsComponent,
     FooterComponent,
-    EducationComponent
+    EducationComponent,
+    AchievementsComponent
   ],
   imports: [
     CommonModule,
