@@ -77,7 +77,7 @@
       },
       {
         "file": ".gitignore",
-        "hash": "5022640584917843928"
+        "hash": "2194494016355187794"
       },
       {
         "file": ".prettierrc",
@@ -157,7 +157,7 @@
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "6277476064040034157"
+        "hash": "13985678167641176062"
       },
       {
         "file": "src/app/app.module.ts",
@@ -169,7 +169,7 @@
       },
       {
         "file": "src/app/components/footer/footer.component.html",
-        "hash": "12963333557266035702"
+        "hash": "9696206634591672621"
       },
       {
         "file": "src/app/components/footer/footer.component.scss",
