@@ -133,11 +133,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "16978438614452498334"
+        "hash": "8367504444691622959"
       },
       {
         "file": "package.json",
-        "hash": "13774248365742240672"
+        "hash": "3642182814491702915"
       },
       {
         "file": "src/app/app-routing.module.ts",
@@ -157,7 +157,7 @@
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "13273778530590207004"
+        "hash": "6277476064040034157"
       },
       {
         "file": "src/app/app.module.ts",
