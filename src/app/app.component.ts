@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { SwUpdate } from '@angular/service-worker';
+import { SwUpdate, VersionReadyEvent } from '@angular/service-worker';
 import { Platform } from '@ionic/angular';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -40,7 +41,7 @@ export class AppComponent implements OnInit {
   }
 
   updatePWA() {
-    this.swUpdate.available.subscribe((value) => {
+    this.swUpdate.versionUpdates.subscribe((value) => {
       console.log('update', value);
       window.location.reload();
     });
