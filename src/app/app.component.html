@@ -14,7 +14,7 @@
   </div>
 
   <!-- Mensaje de actualización -->
-  <div *ngIf="showUpdateMessage" class="update-message">
+  <div *ngIf="showUpdateMessage && !deferredPrompt" class="update-message">
     <ion-card>
       <ion-spinner name="crescent"></ion-spinner>
       <ion-label>Actualizando aplicación...</ion-label>

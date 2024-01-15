@@ -145,11 +145,11 @@
       },
       {
         "file": "src/app/app.component.html",
-        "hash": "1863388359251399181"
+        "hash": "703730714466321971"
       },
       {
         "file": "src/app/app.component.scss",
-        "hash": "3244421341483603138"
+        "hash": "5900526613097122227"
       },
       {
         "file": "src/app/app.component.spec.ts",
@@ -157,11 +157,11 @@
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "13985678167641176062"
+        "hash": "5398269366956208652"
       },
       {
         "file": "src/app/app.module.ts",
-        "hash": "1015788572496709600"
+        "hash": "12856961001519489613"
       },
       {
         "file": "src/app/components/components.module.ts",
@@ -676,6 +676,98 @@
         "hash": "16467415637893171087"
       },
       {
+        "file": "src/assets/img/Portafolio/caratulas/min/01_Tarjetas_Arrastrables.webp",
+        "hash": "249475031103071231"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/02_Tarjeta_Responsive.webp",
+        "hash": "11900342011785973327"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/03_Skills_Bar.webp",
+        "hash": "12913372311708059706"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/04_Tarjetas_Presentacion.webp",
+        "hash": "14925632374346097750"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/05_Widget_Clima.webp",
+        "hash": "7706149997426807848"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/06_Social_Meida_Neu.webp",
+        "hash": "5812086721690595008"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/07_Login_Neu.webp",
+        "hash": "3722007357856046657"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/08_Checkbox_Neu.webp",
+        "hash": "1254147845051093508"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/09_Menu_Circular_Neu.webp",
+        "hash": "14943623764363872817"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/10_Calculadora_Neu.webp",
+        "hash": "2135371600146099587"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/11_Reproductor_Design.webp",
+        "hash": "14970564652539306180"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/13_Reproductor_Design.webp",
+        "hash": "6609417283358417757"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/14_Tarjeta_Responsiva.webp",
+        "hash": "6585435827667182726"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/15_Template_CV.webp",
+        "hash": "12371479691257515771"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/FreskyPan.webp",
+        "hash": "14177789701348650039"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/FusaTour.webp",
+        "hash": "15265449434113086703"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/OWASP_PHP.webp",
+        "hash": "11203859783051236666"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/Perceptron.webp",
+        "hash": "7049491543018923957"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/Template_A-frame.webp",
+        "hash": "13243937924512854784"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/Template_FlexBox.webp",
+        "hash": "8264854340418993248"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/Template_Material_Design.webp",
+        "hash": "14659982074916802638"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/Template_Portafolio.webp",
+        "hash": "1933025357011450534"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/Template_Restaurante.webp",
+        "hash": "626956671507055845"
+      },
+      {
         "file": "src/assets/img/achievements/arctic-code-vault-contributor-default.png",
         "hash": "11342233047892459718"
       },
@@ -725,7 +817,7 @@
       },
       {
         "file": "src/index.html",
-        "hash": "16249445871473664338"
+        "hash": "10457919629276427044"
       },
       {
         "file": "src/main.ts",
