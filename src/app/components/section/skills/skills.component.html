@@ -18,3 +18,19 @@
     </ng-container>
   </ion-row>
 </ion-grid>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Conocimientos de Osman Jimenez",
+  "itemListElement": [
+    {% for skill in skills %}
+    {
+      "@type": "DefinedTerm",
+      "name": "{{ skill.name }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>

@@ -10,7 +10,7 @@
         <div class="card work">
           <div class="card-desc">
             <img src="assets/img/achievements/{{ achievement.icon }}" height="32" width="32"
-              alt="{{ achievement.name }} |Osman Armando Jimenez Cortes" />
+              alt="{{ achievement.name }} | Osman Armando Jimenez Cortes" />
             <div class="card-time">{{ achievement.name }}</div>
             <p class="recent">{{ achievement.platform }}</p>
           </div>
@@ -19,3 +19,25 @@
     </ng-container>
   </ion-row>
 </ion-grid>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Insignias de Osman Jimenez",
+  "itemListElement": [
+    {% for achievement in achievements %}
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index }},
+      "item": {
+        "@type": "CreativeWork",
+        "name": "{{ achievement.name }}",
+        "description": "{{ achievement.platform }}",
+        "url": "https://github.com/OsmanJimenez"
+      }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>

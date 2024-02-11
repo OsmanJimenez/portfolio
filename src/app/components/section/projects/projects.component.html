@@ -26,18 +26,21 @@
   </ion-row>
 </ion-grid>
 
-<ul class="pagination">
-  <li class="page-item" [class.disabled]="currentPage === 1">
-    <a class="page-link" href="#" (click)="changePage(currentPage - 1)" aria-label="Anterior">
-      <span aria-hidden="true">&laquo;</span>
-    </a>
-  </li>
-  <li class="page-item" *ngFor="let page of pages" [class.active]="page === currentPage">
-    <a class="page-link" href="#" (click)="changePage(page)">{{ page }}</a>
-  </li>
-  <li class="page-item" [class.disabled]="currentPage === totalPages">
-    <a class="page-link" href="#" (click)="changePage(currentPage + 1)" aria-label="Siguiente">
-      <span aria-hidden="true">&raquo;</span>
-    </a>
-  </li>
-</ul>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Proyectos de Osman Jimenez",
+  "itemListElement": [
+    {% for project in pagedProjects %}
+    {
+      "@type": "CreativeWork",
+      "name": "{{ project.name }}",
+      "url": "{{ project.url }}",
+      "image": "assets/img/Portafolio/caratulas/{{ project.url_photo }}",
+      "description": "Este proyecto realizado por Osman Jimenez incluye las siguientes habilidades: {% for skill in project.skills %}{{ skill }}{% if not loop.last %}, {% endif %}{% endfor %}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>

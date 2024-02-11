@@ -21,13 +21,42 @@
                 <ion-chip color="success">{{ skill }}</ion-chip>
               </ng-container>
             </div>
-
           </ion-card-content>
         </ion-col>
-
-
       </ion-row>
     </ion-card>
   </div>
-
 </ng-container>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Experiencia Laboral de Osman Jimenez",
+  "itemListElement": [
+    {% for experience in experiences %}
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index }},
+      "item": {
+        "@type": "JobPosting",
+        "title": "{{ experience.job_position }}",
+        "datePosted": "{{ experience.working_period }}",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "{{ experience.job_enterprice }}",
+          "sameAs": "{{ experience.job_enterprice_link }}",
+          "logo": "{{ experience.job_enterprice_img }}"
+        },
+        "skills": [
+          {% for skill in experience.skills %}
+          "{{ skill }}"{% if not loop.last %},{% endif %}
+          {% endfor %}
+        ],
+        "description": "{{ experience.job_description }}"
+      }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
