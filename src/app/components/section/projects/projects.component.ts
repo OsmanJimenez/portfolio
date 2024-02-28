@@ -7,7 +7,7 @@ import { ProjectsService } from 'src/app/services/section/projects/projects.serv
   styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent implements OnInit {
-  projects: any[] = []; // Tu arreglo de proyectos
+  projects: any[] = [];
   pagedProjects: any[] = []; // Arreglo de proyectos paginados
   itemsPerPage = 6; // Cantidad de elementos por página
   totalPages = 0; // Total de páginas

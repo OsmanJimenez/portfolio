@@ -121,7 +121,7 @@
       },
       {
         "file": "ionic_utils.txt",
-        "hash": "3041363507461411002"
+        "hash": "14616459059829973352"
       },
       {
         "file": "karma.conf.js",
@@ -133,11 +133,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "8367504444691622959"
+        "hash": "10877487682953561629"
       },
       {
         "file": "package.json",
-        "hash": "3642182814491702915"
+        "hash": "2249001587597159573"
       },
       {
         "file": "src/app/app-routing.module.ts",
@@ -185,7 +185,7 @@
       },
       {
         "file": "src/app/components/header/card-profile/card-profile.component.html",
-        "hash": "16090822358233097938"
+        "hash": "8082912079915587210"
       },
       {
         "file": "src/app/components/header/card-profile/card-profile.component.scss",
@@ -233,7 +233,7 @@
       },
       {
         "file": "src/app/components/section/achievements/achievements.component.html",
-        "hash": "16191635233667377097"
+        "hash": "2942125527608511470"
       },
       {
         "file": "src/app/components/section/achievements/achievements.component.scss",
@@ -249,7 +249,7 @@
       },
       {
         "file": "src/app/components/section/education/education.component.html",
-        "hash": "14946154071432008121"
+        "hash": "1300838379532975088"
       },
       {
         "file": "src/app/components/section/education/education.component.scss",
@@ -265,7 +265,7 @@
       },
       {
         "file": "src/app/components/section/experience/experience.component.html",
-        "hash": "7866008289165234786"
+        "hash": "10905081106854750822"
       },
       {
         "file": "src/app/components/section/experience/experience.component.scss",
@@ -281,7 +281,7 @@
       },
       {
         "file": "src/app/components/section/projects/projects.component.html",
-        "hash": "14610024028386583899"
+        "hash": "13748913434088983463"
       },
       {
         "file": "src/app/components/section/projects/projects.component.scss",
@@ -293,7 +293,7 @@
       },
       {
         "file": "src/app/components/section/skills/skills.component.html",
-        "hash": "15832116045118225982"
+        "hash": "9524276920179195893"
       },
       {
         "file": "src/app/components/section/skills/skills.component.scss",
@@ -309,7 +309,7 @@
       },
       {
         "file": "src/app/components/section/tools/tools.component.html",
-        "hash": "4309932553960062458"
+        "hash": "4600442968381720873"
       },
       {
         "file": "src/app/components/section/tools/tools.component.scss",
@@ -817,7 +817,7 @@
       },
       {
         "file": "src/index.html",
-        "hash": "2784659825311295809"
+        "hash": "11022661112665339576"
       },
       {
         "file": "src/main.ts",
