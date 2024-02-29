@@ -1,0 +1,29 @@
+[
+    {
+        "url_photo": "01_Tarjetas_Arrastrables.webp",
+        "name": "Frontend a profundidad con Angular",
+        "institution": "Platzi",
+        "url": "https://github.com/OsmanJimenez/Tarjetas_Arrastrables",
+        "logo": "angular-2.svg",
+        "color": "red",        
+        "date": "Jun 2022 - Jun 2023"
+    },
+    {
+        "url_photo": "01_Tarjetas_Arrastrables.webp",
+        "name": "Ingenieria de Sistemas y Computación",
+        "institution": "Universidad de Cundinamarca",
+        "url": "https://github.com/OsmanJimenez/Tarjetas_Arrastrables",
+        "logo": "bulb.svg",
+        "color": "blue",        
+        "date": "Feb 2016 - Dic 2020"
+    },
+    {
+        "url_photo": "01_Tarjetas_Arrastrables.webp",
+        "name": "Ingles Basico A1",
+        "institution": "Platzi",
+        "url": "https://github.com/OsmanJimenez/Tarjetas_Arrastrables",
+        "logo": "english.svg",
+        "color": "yellow",        
+        "date": "Jul 2023 - Sep 2023"
+    }
+]

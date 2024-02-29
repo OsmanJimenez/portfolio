@@ -1,0 +1,21 @@
+<ion-title>Insignias</ion-title>
+<div class="subtitle-separator">
+  <div class="bar" style="width: 200px"></div>
+</div>
+
+<ion-grid class="info-card">
+  <ion-row>
+    <ng-container *ngFor="let achievement of achievements">
+      <ion-col size-xs="6" size-sm="6" size-md="4" size-lg="4" size-xl="3">
+        <div class="card work">
+          <div class="card-desc">
+            <img src="assets/img/achievements/{{ achievement.icon }}" height="32" width="32"
+              alt="{{ achievement.name }} |Osman Armando Jimenez Cortes" />
+            <div class="card-time">{{ achievement.name }}</div>
+            <p class="recent">{{ achievement.platform }}</p>
+          </div>
+        </div>
+      </ion-col>
+    </ng-container>
+  </ion-row>
+</ion-grid>

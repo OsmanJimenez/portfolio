@@ -5,10 +5,11 @@
 <ion-grid class="info-card">
   <ion-row>
     <ng-container *ngFor="let skill of skills">
-      <ion-col size-xs="6" size-sm="6" size-md="4" size-lg="4" size-xl="3">
+      <ion-col size-xs="6" size-sm="6" size-md="3" size-lg="3" size-xl="2">
         <ion-card>
           <i [class]="skill.icon" *ngIf="skill.icon !== ''"></i>
-          <img src="assets/icons/{{ skill.src }}" *ngIf="skill.icon === ''" />
+          <img src="assets/icons/{{ skill.src }}" *ngIf="skill.icon === ''"
+            alt="{{ skill.name }} |Osman Armando Jimenez Cortes" />
           <ion-item lines="none" class="list-skills">
             <ion-label> {{ skill.name }}</ion-label>
           </ion-item>

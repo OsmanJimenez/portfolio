@@ -1,0 +1,27 @@
+[
+    {
+        "icon": "quickdraw-default.png",
+        "src": "angular",
+        "name": "Quickdraw",
+        "platform": "GitHub"
+    },
+     {
+        "icon": "arctic-code-vault-contributor-default.png",
+        "src": "angular",
+        "name": "Arctic Code Vault Contributor",
+        "platform": "GitHub"
+    },
+     {
+        "icon": "pull-shark-default.png",
+        "src": "angular",
+        "name": "Pull Shark",
+        "platform": "GitHub"
+    },
+     {
+        "icon": "yolo-default.png",
+        "src": "angular",
+        "name": "Yolo",
+        "platform": "GitHub"
+    }
+
+]

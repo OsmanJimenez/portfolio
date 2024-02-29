@@ -27,6 +27,7 @@ ion-card {
 
     .social-media-links {
       margin-top: 8px;
+
       button {
         border-radius: 50%;
         height: 40px;
@@ -34,6 +35,10 @@ ion-card {
         margin: 16px 12px 0px 0px;
         background: #aed285;
         color: #1d4f45;
+      }
+
+      button:hover {
+        transform: translateY(-2px);
       }
     }
 
