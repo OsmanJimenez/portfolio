@@ -121,7 +121,7 @@
       },
       {
         "file": "ionic_utils.txt",
-        "hash": "14616459059829973352"
+        "hash": "3041363507461411002"
       },
       {
         "file": "karma.conf.js",
@@ -149,7 +149,7 @@
       },
       {
         "file": "src/app/app.component.scss",
-        "hash": "5900526613097122227"
+        "hash": "15361272966954136923"
       },
       {
         "file": "src/app/app.component.spec.ts",
@@ -237,7 +237,7 @@
       },
       {
         "file": "src/app/components/section/achievements/achievements.component.scss",
-        "hash": "4356742488912566100"
+        "hash": "11709096002785990474"
       },
       {
         "file": "src/app/components/section/achievements/achievements.component.spec.ts",
@@ -245,7 +245,7 @@
       },
       {
         "file": "src/app/components/section/achievements/achievements.component.ts",
-        "hash": "12481723628518542935"
+        "hash": "3864093694682609466"
       },
       {
         "file": "src/app/components/section/education/education.component.html",
@@ -253,7 +253,7 @@
       },
       {
         "file": "src/app/components/section/education/education.component.scss",
-        "hash": "3760395890985774651"
+        "hash": "14636560662326078105"
       },
       {
         "file": "src/app/components/section/education/education.component.spec.ts",
@@ -261,7 +261,7 @@
       },
       {
         "file": "src/app/components/section/education/education.component.ts",
-        "hash": "8771030918435812925"
+        "hash": "6934347736123833378"
       },
       {
         "file": "src/app/components/section/experience/experience.component.html",
@@ -289,7 +289,7 @@
       },
       {
         "file": "src/app/components/section/projects/projects.component.ts",
-        "hash": "5047242480492766880"
+        "hash": "13718247789729916872"
       },
       {
         "file": "src/app/components/section/skills/skills.component.html",
@@ -329,7 +329,7 @@
       },
       {
         "file": "src/app/mocks/education.mock.json",
-        "hash": "12182891642456707896"
+        "hash": "12447184844864542101"
       },
       {
         "file": "src/app/mocks/experience.mock.json",
@@ -341,7 +341,7 @@
       },
       {
         "file": "src/app/mocks/skills.mock.json",
-        "hash": "17665987187880674859"
+        "hash": "5044365295797526775"
       },
       {
         "file": "src/app/mocks/tools.mock.json",
@@ -440,6 +440,10 @@
         "hash": "10973163107875151215"
       },
       {
+        "file": "src/assets/icons/artificial-brain-computer.svg",
+        "hash": "10389439173664764887"
+      },
+      {
         "file": "src/assets/icons/bitbucket.svg",
         "hash": "12500032774275777977"
       },
@@ -530,6 +534,14 @@
       {
         "file": "src/assets/icons/postman.svg",
         "hash": "8236568577829671124"
+      },
+      {
+        "file": "src/assets/icons/primeng-logo.webp",
+        "hash": "8828649401357612023"
+      },
+      {
+        "file": "src/assets/icons/programming.svg",
+        "hash": "3953793645827309998"
       },
       {
         "file": "src/assets/icons/pwa.png",

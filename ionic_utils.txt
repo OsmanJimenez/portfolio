@@ -79,11 +79,11 @@ android:usesCleartextTraffic="true">"
 android:usesCleartextTraffic="true">
 
 // Crear la carpeta www para producción
-ionic build --prod
+ng build --prod
 
 
 // Compilar aplicación en otra ruta
-ionic build --configuration production --output-path=public/ --optimization
+ng build --configuration production --output-path=public/ --optimization
 
 // Subir a firebase
 firebase deploy
