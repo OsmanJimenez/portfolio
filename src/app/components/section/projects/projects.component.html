@@ -8,7 +8,8 @@
     <ng-container *ngFor="let project of (viewAll ? projects : projects.slice(0, 6))">
       <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="4">
         <ion-card>
-          <a href="{{ project.url }}" attr.aria-label="{{ project.name }} | Osman Armando Jimenez Cortes">
+          <a href="{{ project.url }}" attr.aria-label="{{ project.name }} | Osman Armando Jimenez Cortes"
+            target="_blank">
             <img src="assets/img/Portafolio/caratulas/{{ project.url_photo }}"
               alt="{{ project.name }} | Osman Armando Jimenez Cortes" />
           </a>

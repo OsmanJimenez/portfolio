@@ -1,0 +1,76 @@
+.certifications-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .section {
+        width: 80%;
+        max-width: 1200px;
+        --background: transparent;
+        padding: 16px;
+
+        .link {
+            text-decoration: none;
+        }
+
+        ion-list {
+            width: 100%;
+            background: transparent;
+
+            ion-item {
+                --background: transparent;
+
+                img {
+                    width: 36px;
+                    border-radius: 50%;
+                }
+
+                .title {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #aed285;
+                }
+            }
+        }
+    }
+
+
+}
+
+.authoritys-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .section {
+        width: 80%;
+        max-width: 1200px;
+        --background: transparent;
+        padding: 16px;
+        text-align: center;
+    }
+}
+
+.centered-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .button-full {
+        width: 90%;
+        background: #aed285;
+        color: #1d4f45;
+        height: 42px;
+        max-width: 412px;
+        border-radius: 15px;
+    }
+}
+
+
+
+ion-list:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 11px 12px #151814;
+    background: #717a6708;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
