@@ -19,3 +19,19 @@
     </ng-container>
   </ion-row>
 </ion-grid>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Herramientas que emplea Osman Jimenez",
+  "itemListElement": [
+    {% for tool in tools %}
+    {
+      "@type": "DefinedTerm",
+      "name": "{{ tool.name }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>

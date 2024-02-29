@@ -1,0 +1,872 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.2.8",
+  "deps": {
+    "@angular/animations": "^17.0.9",
+    "@angular/cdk": "17.0.5",
+    "@angular/common": "^17.0.9",
+    "@angular/core": "^17.0.9",
+    "@angular/forms": "^17.0.9",
+    "@angular/material": "^17.0.5",
+    "@angular/platform-browser": "^17.0.9",
+    "@angular/platform-browser-dynamic": "^17.0.9",
+    "@angular/router": "^17.0.9",
+    "@angular/service-worker": "^17.0.9",
+    "@capacitor/app": "5.0.7",
+    "@capacitor/core": "5.7.0",
+    "@capacitor/haptics": "5.0.7",
+    "@capacitor/keyboard": "5.0.8",
+    "@capacitor/status-bar": "5.0.7",
+    "@ionic/angular": "7.7.1",
+    "bootstrap": "^5.3.2",
+    "fix": "^0.0.3",
+    "rxjs": "~7.8.1",
+    "tslib": "^2.6.2",
+    "zone.js": "~0.14.3",
+    "@angular-devkit/build-angular": "^17.0.10",
+    "@angular-eslint/builder": "17.2.0",
+    "@angular-eslint/eslint-plugin": "17.2.0",
+    "@angular-eslint/eslint-plugin-template": "17.2.0",
+    "@angular-eslint/template-parser": "17.2.0",
+    "@angular/cli": "^17.0.10",
+    "@angular/compiler": "^17.0.9",
+    "@angular/compiler-cli": "^17.0.9",
+    "@angular/language-service": "^17.0.9",
+    "@capacitor/cli": "5.7.0",
+    "@ionic/angular-toolkit": "11.0.1",
+    "@types/jasmine": "~5.1.4",
+    "@types/jasminewd2": "~2.0.13",
+    "@types/node": "^20.11.17",
+    "@typescript-eslint/eslint-plugin": "6.21.0",
+    "@typescript-eslint/parser": "6.21.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-jsdoc": "48.0.6",
+    "eslint-plugin-prefer-arrow": "1.2.3",
+    "jasmine-core": "~5.1.2",
+    "jasmine-spec-reporter": "~7.0.0",
+    "karma": "~6.4.2",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.1",
+    "karma-coverage-istanbul-reporter": "~3.0.3",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "^2.1.0",
+    "ts-node": "~10.9.2",
+    "typescript": "5.2.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "17241496168097493888"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "16903069481563680903"
+      },
+      {
+        "file": ".github/workflows/firebase-hosting-merge.yml",
+        "hash": "1192897438059469511"
+      },
+      {
+        "file": ".github/workflows/firebase-hosting-pull-request.yml",
+        "hash": "7182767302526985783"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "2194494016355187794"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "12755575251333103448"
+      },
+      {
+        "file": "README.md",
+        "hash": "18209502225201129613"
+      },
+      {
+        "file": "angular.json",
+        "hash": "8661930088558392667"
+      },
+      {
+        "file": "capacitor.config.ts",
+        "hash": "4902099499506376816"
+      },
+      {
+        "file": "e2e/protractor.conf.js",
+        "hash": "6712531108049994844"
+      },
+      {
+        "file": "e2e/src/app.e2e-spec.ts",
+        "hash": "15739872874610314339"
+      },
+      {
+        "file": "e2e/src/app.po.ts",
+        "hash": "8213208911742851080"
+      },
+      {
+        "file": "e2e/tsconfig.json",
+        "hash": "13155063326372786861"
+      },
+      {
+        "file": "icon.png",
+        "hash": "14879096075252878521"
+      },
+      {
+        "file": "ionic.config.json",
+        "hash": "16911670608023743449"
+      },
+      {
+        "file": "ionic_utils.txt",
+        "hash": "3041363507461411002"
+      },
+      {
+        "file": "karma.conf.js",
+        "hash": "7323776892221018377"
+      },
+      {
+        "file": "ngsw-config.json",
+        "hash": "17103502601035726840"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "10877487682953561629"
+      },
+      {
+        "file": "package.json",
+        "hash": "2249001587597159573"
+      },
+      {
+        "file": "src/app/app-routing.module.ts",
+        "hash": "6833632459568213443"
+      },
+      {
+        "file": "src/app/app.component.html",
+        "hash": "8972331605508828822"
+      },
+      {
+        "file": "src/app/app.component.scss",
+        "hash": "15361272966954136923"
+      },
+      {
+        "file": "src/app/app.component.spec.ts",
+        "hash": "14243389484929590646"
+      },
+      {
+        "file": "src/app/app.component.ts",
+        "hash": "5398269366956208652"
+      },
+      {
+        "file": "src/app/app.module.ts",
+        "hash": "12856961001519489613"
+      },
+      {
+        "file": "src/app/components/components.module.ts",
+        "hash": "454684646372534245"
+      },
+      {
+        "file": "src/app/components/footer/footer.component.html",
+        "hash": "9696206634591672621"
+      },
+      {
+        "file": "src/app/components/footer/footer.component.scss",
+        "hash": "5626581889413116540"
+      },
+      {
+        "file": "src/app/components/footer/footer.component.spec.ts",
+        "hash": "953915411668843849"
+      },
+      {
+        "file": "src/app/components/footer/footer.component.ts",
+        "hash": "5879171898150896443"
+      },
+      {
+        "file": "src/app/components/header/card-profile/card-profile.component.html",
+        "hash": "8082912079915587210"
+      },
+      {
+        "file": "src/app/components/header/card-profile/card-profile.component.scss",
+        "hash": "5886093871871728297"
+      },
+      {
+        "file": "src/app/components/header/card-profile/card-profile.component.spec.ts",
+        "hash": "10670544385710920160"
+      },
+      {
+        "file": "src/app/components/header/card-profile/card-profile.component.ts",
+        "hash": "9923007934703215908"
+      },
+      {
+        "file": "src/app/components/header/navbar/navbar.component.html",
+        "hash": "2654691383696931406"
+      },
+      {
+        "file": "src/app/components/header/navbar/navbar.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/components/header/navbar/navbar.component.spec.ts",
+        "hash": "589769407574645543"
+      },
+      {
+        "file": "src/app/components/header/navbar/navbar.component.ts",
+        "hash": "12568730442800616381"
+      },
+      {
+        "file": "src/app/components/header/toolbar/toolbar.component.html",
+        "hash": "5531134541450269910"
+      },
+      {
+        "file": "src/app/components/header/toolbar/toolbar.component.scss",
+        "hash": "18031237566153972759"
+      },
+      {
+        "file": "src/app/components/header/toolbar/toolbar.component.spec.ts",
+        "hash": "15209767070042073032"
+      },
+      {
+        "file": "src/app/components/header/toolbar/toolbar.component.ts",
+        "hash": "11704928839483373613"
+      },
+      {
+        "file": "src/app/components/section/achievements/achievements.component.html",
+        "hash": "2942125527608511470"
+      },
+      {
+        "file": "src/app/components/section/achievements/achievements.component.scss",
+        "hash": "11709096002785990474"
+      },
+      {
+        "file": "src/app/components/section/achievements/achievements.component.spec.ts",
+        "hash": "1937771833723973035"
+      },
+      {
+        "file": "src/app/components/section/achievements/achievements.component.ts",
+        "hash": "3864093694682609466"
+      },
+      {
+        "file": "src/app/components/section/education/education.component.html",
+        "hash": "1300838379532975088"
+      },
+      {
+        "file": "src/app/components/section/education/education.component.scss",
+        "hash": "14636560662326078105"
+      },
+      {
+        "file": "src/app/components/section/education/education.component.spec.ts",
+        "hash": "1953586985414288770"
+      },
+      {
+        "file": "src/app/components/section/education/education.component.ts",
+        "hash": "6934347736123833378"
+      },
+      {
+        "file": "src/app/components/section/experience/experience.component.html",
+        "hash": "10905081106854750822"
+      },
+      {
+        "file": "src/app/components/section/experience/experience.component.scss",
+        "hash": "16894091674630467999"
+      },
+      {
+        "file": "src/app/components/section/experience/experience.component.spec.ts",
+        "hash": "5532180218959647171"
+      },
+      {
+        "file": "src/app/components/section/experience/experience.component.ts",
+        "hash": "3793949439727827658"
+      },
+      {
+        "file": "src/app/components/section/projects/projects.component.html",
+        "hash": "13748913434088983463"
+      },
+      {
+        "file": "src/app/components/section/projects/projects.component.scss",
+        "hash": "5695692199916955558"
+      },
+      {
+        "file": "src/app/components/section/projects/projects.component.ts",
+        "hash": "13718247789729916872"
+      },
+      {
+        "file": "src/app/components/section/skills/skills.component.html",
+        "hash": "9524276920179195893"
+      },
+      {
+        "file": "src/app/components/section/skills/skills.component.scss",
+        "hash": "5110353381641835057"
+      },
+      {
+        "file": "src/app/components/section/skills/skills.component.spec.ts",
+        "hash": "15379054138763355901"
+      },
+      {
+        "file": "src/app/components/section/skills/skills.component.ts",
+        "hash": "11453959225646656951"
+      },
+      {
+        "file": "src/app/components/section/tools/tools.component.html",
+        "hash": "4600442968381720873"
+      },
+      {
+        "file": "src/app/components/section/tools/tools.component.scss",
+        "hash": "1675072339510160291"
+      },
+      {
+        "file": "src/app/components/section/tools/tools.component.spec.ts",
+        "hash": "15136233518738176110"
+      },
+      {
+        "file": "src/app/components/section/tools/tools.component.ts",
+        "hash": "3097995629899258679"
+      },
+      {
+        "file": "src/app/mocks/achievements.mock.json",
+        "hash": "9954234571724044502"
+      },
+      {
+        "file": "src/app/mocks/education.mock.json",
+        "hash": "12447184844864542101"
+      },
+      {
+        "file": "src/app/mocks/experience.mock.json",
+        "hash": "8610439593645691145"
+      },
+      {
+        "file": "src/app/mocks/projects.mock.json",
+        "hash": "9385827974715613824"
+      },
+      {
+        "file": "src/app/mocks/skills.mock.json",
+        "hash": "5044365295797526775"
+      },
+      {
+        "file": "src/app/mocks/tools.mock.json",
+        "hash": "10199434097717421384"
+      },
+      {
+        "file": "src/app/pages/home/home-routing.module.ts",
+        "hash": "13786966097019557101"
+      },
+      {
+        "file": "src/app/pages/home/home.module.ts",
+        "hash": "6924833236105356214"
+      },
+      {
+        "file": "src/app/pages/home/home.page.html",
+        "hash": "13471071140087935432"
+      },
+      {
+        "file": "src/app/pages/home/home.page.scss",
+        "hash": "15036214574332298676"
+      },
+      {
+        "file": "src/app/pages/home/home.page.spec.ts",
+        "hash": "6055103598664806887"
+      },
+      {
+        "file": "src/app/pages/home/home.page.ts",
+        "hash": "13662010204496262333"
+      },
+      {
+        "file": "src/app/services/section/achievements/archivements.service.spec.ts",
+        "hash": "9462608832484662652"
+      },
+      {
+        "file": "src/app/services/section/achievements/archivements.service.ts",
+        "hash": "1295971936388061584"
+      },
+      {
+        "file": "src/app/services/section/education/education.service.spec.ts",
+        "hash": "6820647109865903315"
+      },
+      {
+        "file": "src/app/services/section/education/education.service.ts",
+        "hash": "1757641942895394572"
+      },
+      {
+        "file": "src/app/services/section/experiences/experiences.service.spec.ts",
+        "hash": "7316613375876578583"
+      },
+      {
+        "file": "src/app/services/section/experiences/experiences.service.ts",
+        "hash": "12968145782699057832"
+      },
+      {
+        "file": "src/app/services/section/projects/projects.service.spec.ts",
+        "hash": "2711299467627396041"
+      },
+      {
+        "file": "src/app/services/section/projects/projects.service.ts",
+        "hash": "11893239477286981002"
+      },
+      {
+        "file": "src/app/services/section/skills/skills.service.spec.ts",
+        "hash": "102881484147221007"
+      },
+      {
+        "file": "src/app/services/section/skills/skills.service.ts",
+        "hash": "13774154189738979190"
+      },
+      {
+        "file": "src/app/services/section/tools/tools.service.spec.ts",
+        "hash": "17560858866099402301"
+      },
+      {
+        "file": "src/app/services/section/tools/tools.service.ts",
+        "hash": "1724857460186399001"
+      },
+      {
+        "file": "src/assets/icon/favicon.ico",
+        "hash": "14185715348816257119"
+      },
+      {
+        "file": "src/assets/icon/favicon.png",
+        "hash": "5374362589356115899"
+      },
+      {
+        "file": "src/assets/icons/adobe-xd.svg",
+        "hash": "1177925189721774549"
+      },
+      {
+        "file": "src/assets/icons/angular-2.svg",
+        "hash": "8843573711251525445"
+      },
+      {
+        "file": "src/assets/icons/angular.svg",
+        "hash": "10973163107875151215"
+      },
+      {
+        "file": "src/assets/icons/artificial-brain-computer.svg",
+        "hash": "10389439173664764887"
+      },
+      {
+        "file": "src/assets/icons/bitbucket.svg",
+        "hash": "12500032774275777977"
+      },
+      {
+        "file": "src/assets/icons/bootstrap.svg",
+        "hash": "15348224926741802225"
+      },
+      {
+        "file": "src/assets/icons/bulb.svg",
+        "hash": "13419913856385965413"
+      },
+      {
+        "file": "src/assets/icons/c-sharp.svg",
+        "hash": "3207753819780333109"
+      },
+      {
+        "file": "src/assets/icons/capacitor-js.svg",
+        "hash": "3180076424223426569"
+      },
+      {
+        "file": "src/assets/icons/clicdata-logo.webp",
+        "hash": "12758011632048662072"
+      },
+      {
+        "file": "src/assets/icons/css3.svg",
+        "hash": "1776004769563144349"
+      },
+      {
+        "file": "src/assets/icons/draw-io.png",
+        "hash": "1529606651529977034"
+      },
+      {
+        "file": "src/assets/icons/english.svg",
+        "hash": "16878994740219436627"
+      },
+      {
+        "file": "src/assets/icons/figma.svg",
+        "hash": "7450985665578430461"
+      },
+      {
+        "file": "src/assets/icons/github.svg",
+        "hash": "1448707892844826033"
+      },
+      {
+        "file": "src/assets/icons/gitlab.svg",
+        "hash": "4795804156707671762"
+      },
+      {
+        "file": "src/assets/icons/html5.svg",
+        "hash": "4997705387922309617"
+      },
+      {
+        "file": "src/assets/icons/icon-128x128.png",
+        "hash": "11630126667054962974"
+      },
+      {
+        "file": "src/assets/icons/icon-144x144.png",
+        "hash": "9644571560687487708"
+      },
+      {
+        "file": "src/assets/icons/icon-152x152.png",
+        "hash": "16741069675891905719"
+      },
+      {
+        "file": "src/assets/icons/icon-192x192.png",
+        "hash": "11193943703641309769"
+      },
+      {
+        "file": "src/assets/icons/icon-384x384.png",
+        "hash": "2276238950006203750"
+      },
+      {
+        "file": "src/assets/icons/icon-512x512.png",
+        "hash": "13569338101525167750"
+      },
+      {
+        "file": "src/assets/icons/icon-72x72.png",
+        "hash": "15470929348013007002"
+      },
+      {
+        "file": "src/assets/icons/icon-96x96.png",
+        "hash": "12180922980540941547"
+      },
+      {
+        "file": "src/assets/icons/ng-zorro.svg",
+        "hash": "783043334597902474"
+      },
+      {
+        "file": "src/assets/icons/postman.svg",
+        "hash": "8236568577829671124"
+      },
+      {
+        "file": "src/assets/icons/primeng-logo.webp",
+        "hash": "8828649401357612023"
+      },
+      {
+        "file": "src/assets/icons/programming.svg",
+        "hash": "3953793645827309998"
+      },
+      {
+        "file": "src/assets/icons/pwa.png",
+        "hash": "12691254742429732236"
+      },
+      {
+        "file": "src/assets/icons/python.svg",
+        "hash": "7041287247382083255"
+      },
+      {
+        "file": "src/assets/icons/sql-server.webp",
+        "hash": "13426985951603638263"
+      },
+      {
+        "file": "src/assets/icons/sql.png",
+        "hash": "12531456742105689656"
+      },
+      {
+        "file": "src/assets/img/BG.psd",
+        "hash": "6664379329231175014"
+      },
+      {
+        "file": "src/assets/img/Portafolio/A-frame.png",
+        "hash": "9008867377897264559"
+      },
+      {
+        "file": "src/assets/img/Portafolio/FreskyPan.jpg",
+        "hash": "17212845779912478830"
+      },
+      {
+        "file": "src/assets/img/Portafolio/FusaTour.png",
+        "hash": "11696671139650944913"
+      },
+      {
+        "file": "src/assets/img/Portafolio/Fusaviajes.png",
+        "hash": "8488255530588331921"
+      },
+      {
+        "file": "src/assets/img/Portafolio/Machine_Learning.png",
+        "hash": "18080818206597907413"
+      },
+      {
+        "file": "src/assets/img/Portafolio/Template_Flexbox.PNG",
+        "hash": "8547843083354597581"
+      },
+      {
+        "file": "src/assets/img/Portafolio/Template_Portafolio.PNG",
+        "hash": "14670584891924673487"
+      },
+      {
+        "file": "src/assets/img/Portafolio/Template_Restaurante.png",
+        "hash": "3746377656943106216"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/01_Tarjetas_Arrastrables.webp",
+        "hash": "325196569819038787"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/02_Tarjeta_Responsive.webp",
+        "hash": "5295140838634874410"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/03_Skills_Bar.webp",
+        "hash": "16569942834656582224"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/04_Tarjetas_Presentacion.webp",
+        "hash": "4603936946091934849"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/05_Widget_Clima.webp",
+        "hash": "9166023056743522492"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/06_Social_Meida_Neu.webp",
+        "hash": "13192589563221515219"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/07_Login_Neu.webp",
+        "hash": "11865184101666440473"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/08_Checkbox_Neu.webp",
+        "hash": "7631086205419213037"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/09_Menu_Circular_Neu.webp",
+        "hash": "14993708161678102536"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/10_Calculadora_Neu.webp",
+        "hash": "373338191038015383"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/11_Reproductor_Design.webp",
+        "hash": "6691551773601666574"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/13_Reproductor_Design.webp",
+        "hash": "1220757785357290212"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/14_Tarjeta_Responsiva.webp",
+        "hash": "5216652648179038474"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/15_Template_CV.webp",
+        "hash": "9475789812184041020"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/FreskyPan.webp",
+        "hash": "13796318564844046868"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/FusaTour.webp",
+        "hash": "6993745605030116321"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/OWASP_PHP.webp",
+        "hash": "7340179381190651272"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/Perceptron.webp",
+        "hash": "17564658057954818837"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/Template_A-frame.webp",
+        "hash": "1809039218238116233"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/Template_FlexBox.webp",
+        "hash": "9191600147995984205"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/Template_Material_Design.webp",
+        "hash": "347419234494070239"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/Template_Portafolio.webp",
+        "hash": "9165891263177900116"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/Template_Restaurante.webp",
+        "hash": "16467415637893171087"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/01_Tarjetas_Arrastrables.webp",
+        "hash": "249475031103071231"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/02_Tarjeta_Responsive.webp",
+        "hash": "11900342011785973327"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/03_Skills_Bar.webp",
+        "hash": "12913372311708059706"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/04_Tarjetas_Presentacion.webp",
+        "hash": "14925632374346097750"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/05_Widget_Clima.webp",
+        "hash": "7706149997426807848"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/06_Social_Meida_Neu.webp",
+        "hash": "5812086721690595008"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/07_Login_Neu.webp",
+        "hash": "3722007357856046657"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/08_Checkbox_Neu.webp",
+        "hash": "1254147845051093508"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/09_Menu_Circular_Neu.webp",
+        "hash": "14943623764363872817"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/10_Calculadora_Neu.webp",
+        "hash": "2135371600146099587"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/11_Reproductor_Design.webp",
+        "hash": "14970564652539306180"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/13_Reproductor_Design.webp",
+        "hash": "6609417283358417757"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/14_Tarjeta_Responsiva.webp",
+        "hash": "6585435827667182726"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/15_Template_CV.webp",
+        "hash": "12371479691257515771"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/FreskyPan.webp",
+        "hash": "14177789701348650039"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/FusaTour.webp",
+        "hash": "15265449434113086703"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/OWASP_PHP.webp",
+        "hash": "11203859783051236666"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/Perceptron.webp",
+        "hash": "7049491543018923957"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/Template_A-frame.webp",
+        "hash": "13243937924512854784"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/Template_FlexBox.webp",
+        "hash": "8264854340418993248"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/Template_Material_Design.webp",
+        "hash": "14659982074916802638"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/Template_Portafolio.webp",
+        "hash": "1933025357011450534"
+      },
+      {
+        "file": "src/assets/img/Portafolio/caratulas/min/Template_Restaurante.webp",
+        "hash": "626956671507055845"
+      },
+      {
+        "file": "src/assets/img/achievements/arctic-code-vault-contributor-default.png",
+        "hash": "11342233047892459718"
+      },
+      {
+        "file": "src/assets/img/achievements/olimpiadas-tbtb-global.png",
+        "hash": "1892254422322422237"
+      },
+      {
+        "file": "src/assets/img/achievements/pull-shark-default.png",
+        "hash": "4102551233195847538"
+      },
+      {
+        "file": "src/assets/img/achievements/quickdraw-default.png",
+        "hash": "8182562461928858618"
+      },
+      {
+        "file": "src/assets/img/achievements/yolo-default.png",
+        "hash": "14860423528983424159"
+      },
+      {
+        "file": "src/assets/img/foto.jpg",
+        "hash": "12985650441253047432"
+      },
+      {
+        "file": "src/assets/img/header/profile.webp",
+        "hash": "10758460987544069686"
+      },
+      {
+        "file": "src/assets/img/voluntariado/Escudo_Universidad_de_Cundinamarca.png",
+        "hash": "4655136851889933708"
+      },
+      {
+        "file": "src/assets/img/voluntariado/Red_Fusa_Libre.jpg",
+        "hash": "4899038431696069485"
+      },
+      {
+        "file": "src/assets/shapes.svg",
+        "hash": "6713572288142939778"
+      },
+      {
+        "file": "src/environments/environment.prod.ts",
+        "hash": "11847377846594200203"
+      },
+      {
+        "file": "src/global.scss",
+        "hash": "2669149728160026626"
+      },
+      {
+        "file": "src/index.html",
+        "hash": "11022661112665339576"
+      },
+      {
+        "file": "src/main.ts",
+        "hash": "14418682105238715715"
+      },
+      {
+        "file": "src/manifest.webmanifest",
+        "hash": "14714235269031660955"
+      },
+      {
+        "file": "src/polyfills.ts",
+        "hash": "8873083570888261428"
+      },
+      {
+        "file": "src/test.ts",
+        "hash": "3780438891821048747"
+      },
+      {
+        "file": "src/theme/variables.scss",
+        "hash": "778071617218937339"
+      },
+      {
+        "file": "src/zone-flags.ts",
+        "hash": "6117193595888083885"
+      },
+      {
+        "file": "tsconfig.app.json",
+        "hash": "7685451593566938896"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "16524399492922478260"
+      },
+      {
+        "file": "tsconfig.spec.json",
+        "hash": "14277469517724802009"
+      }
+    ]
+  }
+}

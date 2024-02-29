@@ -1,3 +1,23 @@
 <ion-app>
   <ion-router-outlet></ion-router-outlet>
+
+  <div *ngIf="deferredPrompt" class="install-prompt">
+    <ion-card>
+      <ion-card-content>
+        ¿Deseas instalar esta aplicación?
+      </ion-card-content>
+      <div class="buttons">
+        <ion-button (click)="showInstallPrompt()">Aceptar</ion-button>
+        <ion-button (click)="dismissPrompt()">Ahora no</ion-button>
+      </div>
+    </ion-card>
+  </div>
+
+  <!-- Mensaje de actualización -->
+  <div *ngIf="showUpdateMessage && !deferredPrompt" class="update-message">
+    <ion-card>
+      <ion-spinner name="crescent"></ion-spinner>
+      <ion-label>Actualizando aplicación...</ion-label>
+    </ion-card>
+  </div>
 </ion-app>

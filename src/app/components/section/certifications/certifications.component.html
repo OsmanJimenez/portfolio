@@ -1,0 +1,74 @@
+<ion-title>Certificaciones</ion-title>
+<div class="subtitle-separator">
+  <div class="bar" style="width: 280px"></div>
+</div>
+
+<div class="authoritys-section">
+  <div class="section">
+    <ion-chip color="success" *ngFor="let authority of authoritys" (click)="toggleAuthoritySelection(authority)">
+      <ion-avatar>
+        <img attr.aria-label="{{ authority.name }} | Osman Armando Jimenez Cortes"
+          src="assets/icons/enterprices/{{ authority.icon }}" />
+      </ion-avatar>
+      <ion-label>{{ authority.name }}</ion-label>
+      <ion-icon *ngIf="authority.selected" name="close-circle"
+        (click)="removeFilter($event, authority.name)"></ion-icon>
+    </ion-chip>
+  </div>
+</div>
+
+<div class="certifications-section">
+  <div class="section">
+    <ng-container  *ngFor="let certification of (viewAll ? certifications : certifications.slice(0, 4))">
+      <ion-list [inset]="true">
+        <a href="{{ certification.url }}" class="link"
+          attr.aria-label="{{ certification.name }} | Osman Armando Jimenez Cortes" target="_blank">
+          <ion-item [button]="true" detail="false">
+            <img src="assets/icons/enterprices/{{ certification.icon }}"
+              alt="{{ certification.name }} |Osman Armando Jimenez Cortes" slot="start" />
+            <ion-label>
+              <strong class="title">{{ certification.name }}</strong>
+              <br />
+              <ion-note color="medium" class="ion-text-wrap">{{ certification.authority }}</ion-note>
+            </ion-label>
+            <div class="metadata-end-wrapper" slot="end">
+              <ion-note color="medium">{{ certification.started_On }}</ion-note>
+            </div>
+          </ion-item>
+        </a>
+      </ion-list>
+    </ng-container>
+  </div>
+</div>
+
+<div class="centered-button">
+  <button *ngIf="certifications.length > 4" (click)="viewMore()" class="button-full">
+    {{ viewAll ? 'Ver menos' : 'Ver más' }}
+  </button>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Certificaciones de Osman Armando Jimenez Cortes",
+  "itemListElement": [
+    {% for certification in certifications %}
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index }},
+      "item": {
+        "@type": "Course",
+        "name": "{{ certification.name }}",
+        "provider": {
+          "@type": "Organization",
+          "name": "{{ certification.authority }}"
+        },
+        "startDate": "{{ certification.started_On }}",
+        "url": "{{ certification.url }}"
+      }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>

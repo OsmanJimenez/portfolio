@@ -7,7 +7,7 @@ import { EducationService } from 'src/app/services/section/education/education.s
   styleUrls: ['./education.component.scss'],
 })
 export class EducationComponent implements OnInit {
-  educations: any[] = []; // Tu arreglo de proyectos
+  educations: any[] = [];
 
   constructor(private educationService: EducationService) { }
 

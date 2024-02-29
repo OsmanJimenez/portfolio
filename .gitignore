@@ -42,6 +42,7 @@ npm-debug.log*
 firebase.json
 public/
 .firebase/hosting.cHVibGlj.cache
-.firebase/hosting.cHVibGlj.cache
-.firebase/hosting.cHVibGlj.cache
 .firebase/*
+.nx/*
+.nx/cache/file-map.json
+.nx/cache/nx_files.nxt

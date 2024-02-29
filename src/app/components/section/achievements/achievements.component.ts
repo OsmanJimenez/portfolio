@@ -7,7 +7,7 @@ import { ArchivementsService } from 'src/app/services/section/achievements/archi
   styleUrls: ['./achievements.component.scss'],
 })
 export class AchievementsComponent implements OnInit {
-  achievements: any[] = []; // Tu arreglo de proyectos
+  achievements: any[] = [];
 
   constructor(private achievementsService: ArchivementsService) { }
 

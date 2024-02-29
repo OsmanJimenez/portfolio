@@ -9,14 +9,12 @@
       <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="4">
         <div class="card work">
           <div class="img-section {{ education.color }}">
-
             <img src="assets/icons/{{ education.logo }}" height="77" width="76"
-              alt="{{ education.name }} |Osman Armando Jimenez Cortes" />
+              alt="{{ education.name }} | Osman Armando Jimenez Cortes" />
           </div>
           <div class="card-desc">
             <div class="card-header">
               <div class="card-title">{{ education.date }}</div>
-
             </div>
             <div class="card-time">{{ education.name }}</div>
             <p class="recent">{{ education.institution }}</p>
@@ -27,4 +25,24 @@
   </ion-row>
 </ion-grid>
 
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Educación de Osman Jimenez",
+  "itemListElement": [
+    {% for education in educations %}
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index }},
+      "item": {
+        "@type": "EducationalOrganization",
+        "name": "{{ education.name }}",
+        "description": "{{ education.institution }}",
+        "url": "{{ education.url }}"
+      }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
