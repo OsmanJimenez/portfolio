@@ -8,6 +8,7 @@ import { ExperiencesService } from 'src/app/services/section/experiences/experie
 })
 export class ExperienceComponent implements OnInit {
   experiences = [];
+  jsonLdScript: string;
 
   constructor(private experiencesService: ExperiencesService) { }
 
@@ -21,10 +22,11 @@ export class ExperienceComponent implements OnInit {
         if (res) {
           this.experiences = res.map(experience => ({
             ...experience,
-            showFullDescription: false, 
+            showFullDescription: false,
             truncatedDescription: this.truncateDescription(experience.job_description),
             fullDescription: experience.job_description
           }));
+          this.generateJsonLdScript();
         }
       }
     );
@@ -40,5 +42,37 @@ export class ExperienceComponent implements OnInit {
 
   showFullDescription(index: number) {
     this.experiences[index].showFullDescription = true;
+  }
+
+  generateJsonLdScript() {
+    this.jsonLdScript = `{
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Experiencia Laboral de Osman Jimenez",
+      "itemListElement": [
+        ${this.experiences.map((experience, index) => {
+      return `{
+              "@type": "ListItem",
+              "position": ${index + 1},
+              "item": {
+                "@type": "JobPosting",
+                "title": "${experience.job_position}",
+                "datePosted": "${experience.working_period}",
+                "hiringOrganization": {
+                  "@type": "Organization",
+                  "name": "${experience.job_enterprice}",
+                  "sameAs": "${experience.job_enterprice_link}",
+                  "logo": "${experience.job_enterprice_img}"
+                },
+                "skills": [
+                  ${experience.skills.map(skill => `"${skill}"`).join(',')}
+                ],
+                "description": "${experience.job_description}"
+              }
+            }`;
+    }).join(',')
+      }
+      ]
+    }`;
   }
 }

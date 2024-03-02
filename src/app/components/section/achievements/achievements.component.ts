@@ -8,6 +8,7 @@ import { ArchivementsService } from 'src/app/services/section/achievements/archi
 })
 export class AchievementsComponent implements OnInit {
   achievements: any[] = [];
+  jsonLdScript: string;
 
   constructor(private achievementsService: ArchivementsService) { }
 
@@ -20,10 +21,32 @@ export class AchievementsComponent implements OnInit {
       (res) => {
         if (res) {
           this.achievements = res;
-
+          this.generateJsonLdScript();
         }
       }
     );
   }
 
+  generateJsonLdScript() {
+    this.jsonLdScript = `{
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Insignias de Osman Jimenez",
+      "itemListElement": [
+        ${this.achievements.map((achievement, index) => {
+      return `{
+              "@type": "ListItem",
+              "position": ${index + 1},
+              "item": {
+                "@type": "CreativeWork",
+                "name": "${achievement.name}",
+                "description": "${achievement.platform}",
+                "url": "https://github.com/OsmanJimenez"
+              }
+            }`;
+    }).join(',')
+      }
+      ]
+    }`;
+  }
 }

@@ -11,6 +11,7 @@ export class CertificationsComponent implements OnInit {
   originalCertifications: any[] = [];
   authoritys: { name: string, icon: string, selected: boolean }[] = [];
   viewAll = false;
+  jsonLdScript: string;
 
   constructor(private certificationsService: CertificationsService) { }
 
@@ -23,8 +24,9 @@ export class CertificationsComponent implements OnInit {
       (res) => {
         if (res) {
           this.certifications = res;
-          this.originalCertifications = [...this.certifications]; // Copia de respaldo
+          this.originalCertifications = [...this.certifications];
           this.generateAuthoritys();
+          this.generateJsonLdScript();
         }
       }
     );
@@ -40,20 +42,37 @@ export class CertificationsComponent implements OnInit {
     }));
   }
 
-  filterByAuthority(authorityName: string) {
-    this.authoritys.forEach(authority => {
-      if (authority.name === authorityName) {
-        authority.selected = true;
-      } else {
-        authority.selected = false;
+  generateJsonLdScript() {
+    this.jsonLdScript = `{
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Certificaciones de Osman Armando Jimenez Cortes",
+      "itemListElement": [
+        ${this.certifications.map((certification, index) => {
+      return `{
+              "@type": "ListItem",
+              "position": ${index + 1},
+              "item": {
+                "@type": "Course",
+                "name": "${certification.name}",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "${certification.authority}"
+                },
+                "startDate": "${certification.started_On}",
+                "url": "${certification.url}"
+              }
+            }`;
+    }).join(',')
       }
-    });
-    this.certifications = this.originalCertifications.filter(certification => certification.authority === authorityName);
+      ]
+    }`;
   }
 
   resetFilter() {
     this.authoritys.forEach(authority => authority.selected = false);
     this.certifications = [...this.originalCertifications];
+    this.generateJsonLdScript();
   }
 
   removeFilter(event: Event, authorityName: string) {
@@ -68,7 +87,7 @@ export class CertificationsComponent implements OnInit {
   viewMore() {
     this.viewAll = !this.viewAll;
     if (!this.viewAll) {
-      this.certifications = this.certifications.slice(0, 6);
+      this.certifications = this.certifications.slice(0, 4);
     }
   }
 
@@ -85,7 +104,7 @@ export class CertificationsComponent implements OnInit {
       this.certifications = this.originalCertifications.filter(certification =>
         selectedAuthorities.some(authority => certification.authority === authority.name)
       );
+      this.generateJsonLdScript();
     }
   }
-
 }

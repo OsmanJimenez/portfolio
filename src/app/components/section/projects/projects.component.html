@@ -33,21 +33,4 @@
 
 </ion-grid>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Proyectos de Osman Jimenez",
-  "itemListElement": [
-    {% for project in pagedProjects %}
-    {
-      "@type": "CreativeWork",
-      "name": "{{ project.name }}",
-      "url": "{{ project.url }}",
-      "image": "assets/img/Portafolio/caratulas/{{ project.url_photo }}",
-      "description": "Este proyecto realizado por Osman Jimenez incluye las siguientes habilidades: {% for skill in project.skills %}{{ skill }}{% if not loop.last %}, {% endif %}{% endfor %}"
-    }{% if not loop.last %},{% endif %}
-    {% endfor %}
-  ]
-}
-</script>
+<script type="application/ld+json" [innerHTML]="jsonLdScript"></script>

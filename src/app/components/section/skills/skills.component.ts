@@ -8,11 +8,12 @@ import { SkillsService } from 'src/app/services/section/skills/skills.service';
 })
 export class SkillsComponent implements OnInit {
   skills = [];
+  jsonLdScript: string;
 
   constructor(private skillsService: SkillsService) { }
 
   ngOnInit() {
-    this.loadSkills()
+    this.loadSkills();
   }
 
   loadSkills() {
@@ -20,8 +21,26 @@ export class SkillsComponent implements OnInit {
       res => {
         if (res) {
           this.skills = res;
+          this.generateJsonLdScript();
         }
       }
     );
+  }
+
+  generateJsonLdScript() {
+    this.jsonLdScript = `{
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Conocimientos de Osman Jimenez",
+      "itemListElement": [
+        ${this.skills.map((skill, index) => {
+      return `{
+              "@type": "DefinedTerm",
+              "name": "${skill.name}"
+            }`;
+    }).join(',')
+      }
+      ]
+    }`;
   }
 }
