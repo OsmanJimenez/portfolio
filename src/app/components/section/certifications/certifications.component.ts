@@ -24,7 +24,7 @@ export class CertificationsComponent implements OnInit {
       (res) => {
         if (res) {
           this.certifications = res;
-          this.originalCertifications = [...this.certifications]; // Copia de respaldo
+          this.originalCertifications = [...this.certifications];
           this.generateAuthoritys();
           this.generateJsonLdScript();
         }
@@ -87,7 +87,7 @@ export class CertificationsComponent implements OnInit {
   viewMore() {
     this.viewAll = !this.viewAll;
     if (!this.viewAll) {
-      this.certifications = this.certifications.slice(0, 6);
+      this.certifications = this.certifications.slice(0, 4);
     }
   }
 
