@@ -19,7 +19,7 @@
 
 <div class="certifications-section">
   <div class="section">
-    <ng-container  *ngFor="let certification of (viewAll ? certifications : certifications.slice(0, 4))">
+    <ng-container *ngFor="let certification of (viewAll ? certifications : certifications.slice(0, 4))">
       <ion-list [inset]="true">
         <a href="{{ certification.url }}" class="link"
           attr.aria-label="{{ certification.name }} | Osman Armando Jimenez Cortes" target="_blank">
@@ -47,28 +47,4 @@
   </button>
 </div>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Certificaciones de Osman Armando Jimenez Cortes",
-  "itemListElement": [
-    {% for certification in certifications %}
-    {
-      "@type": "ListItem",
-      "position": {{ loop.index }},
-      "item": {
-        "@type": "Course",
-        "name": "{{ certification.name }}",
-        "provider": {
-          "@type": "Organization",
-          "name": "{{ certification.authority }}"
-        },
-        "startDate": "{{ certification.started_On }}",
-        "url": "{{ certification.url }}"
-      }
-    }{% if not loop.last %},{% endif %}
-    {% endfor %}
-  ]
-}
-</script>
+<script type="application/ld+json" [innerHTML]="jsonLdScript"></script>

@@ -25,24 +25,4 @@
   </ion-row>
 </ion-grid>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Educación de Osman Jimenez",
-  "itemListElement": [
-    {% for education in educations %}
-    {
-      "@type": "ListItem",
-      "position": {{ loop.index }},
-      "item": {
-        "@type": "EducationalOrganization",
-        "name": "{{ education.name }}",
-        "description": "{{ education.institution }}",
-        "url": "{{ education.url }}"
-      }
-    }{% if not loop.last %},{% endif %}
-    {% endfor %}
-  ]
-}
-</script>
+<script type="application/ld+json" [innerHTML]="jsonLdScript"></script>

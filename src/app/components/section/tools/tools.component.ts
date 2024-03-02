@@ -7,11 +7,13 @@ import { ToolsService } from 'src/app/services/section/tools/tools.service';
   styleUrls: ['./tools.component.scss'],
 })
 export class ToolsComponent implements OnInit {
-  tools = []
+  tools = [];
+  jsonLdScript: string;
+
   constructor(private toolsService: ToolsService) { }
 
   ngOnInit() {
-    this.loadTools()
+    this.loadTools();
   }
 
   loadTools() {
@@ -19,8 +21,26 @@ export class ToolsComponent implements OnInit {
       res => {
         if (res) {
           this.tools = res;
+          this.generateJsonLdScript();
         }
       }
     );
+  }
+
+  generateJsonLdScript() {
+    this.jsonLdScript = `{
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Herramientas que emplea Osman Jimenez",
+      "itemListElement": [
+        ${this.tools.map((tool, index) => {
+      return `{
+              "@type": "DefinedTerm",
+              "name": "${tool.name}"
+            }`;
+    }).join(',')
+      }
+      ]
+    }`;
   }
 }

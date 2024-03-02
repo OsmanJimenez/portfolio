@@ -9,6 +9,7 @@ import { ProjectsService } from 'src/app/services/section/projects/projects.serv
 export class ProjectsComponent implements OnInit {
   projects: any = [];
   viewAll = false;
+  jsonLdScript: string;
 
   constructor(private projectsService: ProjectsService) { }
 
@@ -21,7 +22,8 @@ export class ProjectsComponent implements OnInit {
       res => {
         if (res) {
           this.projects = res;
-          this.addProperty()
+          this.addProperty();
+          this.generateJsonLdScript();
         }
       }
     );
@@ -29,14 +31,33 @@ export class ProjectsComponent implements OnInit {
 
   addProperty() {
     this.projects = this.projects.map((i) => {
-      i.point = Math.floor(Math.random() * 100);;
+      i.point = Math.floor(Math.random() * 100);
       return i;
     });
     this.projects.sort(((a, b) => a.point - b.point));
   }
 
-
   viewMore() {
     this.viewAll = true;
+  }
+
+  generateJsonLdScript() {
+    this.jsonLdScript = `{
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Proyectos de Osman Jimenez",
+      "itemListElement": [
+        ${this.projects.map((project, index) => {
+      return `{
+              "@type": "CreativeWork",
+              "name": "${project.name}",
+              "url": "${project.url}",
+              "image": "assets/img/Portafolio/caratulas/${project.url_photo}",
+              "description": "Este proyecto realizado por Osman Jimenez incluye las siguientes habilidades: ${project.skills.join(', ')}"
+            }`;
+    }).join(',')
+      }
+      ]
+    }`;
   }
 }

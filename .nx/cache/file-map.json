@@ -77,7 +77,7 @@
       },
       {
         "file": ".gitignore",
-        "hash": "2194494016355187794"
+        "hash": "10992505455426983275"
       },
       {
         "file": ".prettierrc",
@@ -161,11 +161,11 @@
       },
       {
         "file": "src/app/app.module.ts",
-        "hash": "12856961001519489613"
+        "hash": "12492242364436143279"
       },
       {
         "file": "src/app/components/components.module.ts",
-        "hash": "454684646372534245"
+        "hash": "11613373736663309829"
       },
       {
         "file": "src/app/components/footer/footer.component.html",
@@ -248,6 +248,22 @@
         "hash": "3864093694682609466"
       },
       {
+        "file": "src/app/components/section/certifications/certifications.component.html",
+        "hash": "7048506203339299677"
+      },
+      {
+        "file": "src/app/components/section/certifications/certifications.component.scss",
+        "hash": "12106586207837707171"
+      },
+      {
+        "file": "src/app/components/section/certifications/certifications.component.spec.ts",
+        "hash": "3647040753238484042"
+      },
+      {
+        "file": "src/app/components/section/certifications/certifications.component.ts",
+        "hash": "8697338170712809170"
+      },
+      {
         "file": "src/app/components/section/education/education.component.html",
         "hash": "1300838379532975088"
       },
@@ -265,11 +281,11 @@
       },
       {
         "file": "src/app/components/section/experience/experience.component.html",
-        "hash": "10905081106854750822"
+        "hash": "2706862673378037497"
       },
       {
         "file": "src/app/components/section/experience/experience.component.scss",
-        "hash": "16894091674630467999"
+        "hash": "15344102556377068133"
       },
       {
         "file": "src/app/components/section/experience/experience.component.spec.ts",
@@ -277,11 +293,11 @@
       },
       {
         "file": "src/app/components/section/experience/experience.component.ts",
-        "hash": "3793949439727827658"
+        "hash": "12018920709296999974"
       },
       {
         "file": "src/app/components/section/projects/projects.component.html",
-        "hash": "13748913434088983463"
+        "hash": "4874367006941647050"
       },
       {
         "file": "src/app/components/section/projects/projects.component.scss",
@@ -289,7 +305,7 @@
       },
       {
         "file": "src/app/components/section/projects/projects.component.ts",
-        "hash": "13718247789729916872"
+        "hash": "12738871063340323800"
       },
       {
         "file": "src/app/components/section/skills/skills.component.html",
@@ -328,6 +344,10 @@
         "hash": "9954234571724044502"
       },
       {
+        "file": "src/app/mocks/certifications.mock.json",
+        "hash": "18137866298810399520"
+      },
+      {
         "file": "src/app/mocks/education.mock.json",
         "hash": "12447184844864542101"
       },
@@ -357,7 +377,7 @@
       },
       {
         "file": "src/app/pages/home/home.page.html",
-        "hash": "13471071140087935432"
+        "hash": "15651243934785095887"
       },
       {
         "file": "src/app/pages/home/home.page.scss",
@@ -378,6 +398,14 @@
       {
         "file": "src/app/services/section/achievements/archivements.service.ts",
         "hash": "1295971936388061584"
+      },
+      {
+        "file": "src/app/services/section/certifications/certifications.service.spec.ts",
+        "hash": "7065539208029758282"
+      },
+      {
+        "file": "src/app/services/section/certifications/certifications.service.ts",
+        "hash": "2613111543436884513"
       },
       {
         "file": "src/app/services/section/education/education.service.spec.ts",
@@ -478,6 +506,66 @@
       {
         "file": "src/assets/icons/english.svg",
         "hash": "16878994740219436627"
+      },
+      {
+        "file": "src/assets/icons/enterprices/Bizagi.png",
+        "hash": "13223625543096334122"
+      },
+      {
+        "file": "src/assets/icons/enterprices/CertiProf.png",
+        "hash": "3693082007377772985"
+      },
+      {
+        "file": "src/assets/icons/enterprices/CódigoFacilito.png",
+        "hash": "16673851044052781382"
+      },
+      {
+        "file": "src/assets/icons/enterprices/Fundación_Carlos_Slim.jpeg",
+        "hash": "3500446966650299449"
+      },
+      {
+        "file": "src/assets/icons/enterprices/Google.png",
+        "hash": "5420950611612086521"
+      },
+      {
+        "file": "src/assets/icons/enterprices/IBM.png",
+        "hash": "7978080220940210634"
+      },
+      {
+        "file": "src/assets/icons/enterprices/LinkedIn.png",
+        "hash": "15845625791098535597"
+      },
+      {
+        "file": "src/assets/icons/enterprices/Platzi.png",
+        "hash": "7890976879849551028"
+      },
+      {
+        "file": "src/assets/icons/enterprices/Project_Management_Institute.png",
+        "hash": "12823948151435964435"
+      },
+      {
+        "file": "src/assets/icons/enterprices/SMstudy.png",
+        "hash": "81033449781137780"
+      },
+      {
+        "file": "src/assets/icons/enterprices/Udemy.png",
+        "hash": "17845012239899638215"
+      },
+      {
+        "file": "src/assets/icons/enterprices/Universidad_Nacional_Autónoma_de_México.png",
+        "hash": "14765380740957823630"
+      },
+      {
+        "file": "src/assets/icons/enterprices/University_of_Michigan.png",
+        "hash": "3327256783767286371"
+      },
+      {
+        "file": "src/assets/icons/enterprices/University_of_Pennsylvania.jpg",
+        "hash": "8796418610782931799"
+      },
+      {
+        "file": "src/assets/icons/enterprices/deeplearning.png",
+        "hash": "13209012674323159237"
       },
       {
         "file": "src/assets/icons/figma.svg",
