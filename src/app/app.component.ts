@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SwUpdate, VersionReadyEvent } from '@angular/service-worker';
 import { filter } from 'rxjs';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -10,12 +11,17 @@ import { filter } from 'rxjs';
 export class AppComponent implements OnInit {
   deferredPrompt: any;
   showUpdateMessage = false;
-
+  private dtrumLoaded = false
   constructor(private swUpdate: SwUpdate) { }
 
   ngOnInit(): void {
+
     this.handlePWAInstallationPrompt();
     this.handleUpdates();
+    this.loadDynatrace();
+  }
+
+  loadDynatrace() {
   }
 
   handlePWAInstallationPrompt(): void {
