@@ -18,10 +18,6 @@ export class AppComponent implements OnInit {
 
     this.handlePWAInstallationPrompt();
     this.handleUpdates();
-    this.loadDynatrace();
-  }
-
-  loadDynatrace() {
   }
 
   handlePWAInstallationPrompt(): void {

@@ -8,7 +8,8 @@
     <ion-chip color="success" *ngFor="let authority of authoritys" (click)="toggleAuthoritySelection(authority)">
       <ion-avatar>
         <img attr.aria-label="{{ authority.name }} | Osman Armando Jimenez Cortes"
-          src="assets/icons/enterprices/{{ authority.icon }}" />
+          src="assets/icons/enterprices/{{ authority.icon }}"
+          alt="{{ authority.name }} | Osman Armando Jimenez Cortes" />
       </ion-avatar>
       <ion-label>{{ authority.name }}</ion-label>
       <ion-icon *ngIf="authority.selected" name="close-circle"
