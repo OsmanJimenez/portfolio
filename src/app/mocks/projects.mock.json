@@ -159,17 +159,6 @@
         ]
     },
     {
-        "url_photo": "Template_Portafolio.webp",
-        "name": "Template Portafolio",
-        "url": "https://osmanjimenez.github.io/Template_Portafolio/",
-        "skills": [
-            "Bootstrap",
-            "HTML5",
-            "JavaScript",
-            "Material Design"
-        ]
-    },
-    {
         "url_photo": "FreskyPan.webp",
         "name": "FreskyPan ERP",
         "url": "https://github.com/OsmanJimenez/FreskyPan",

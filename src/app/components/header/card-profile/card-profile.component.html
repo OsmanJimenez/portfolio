@@ -2,7 +2,7 @@
   <ion-card-content>
     <ion-grid class="ion-no-padding">
       <ion-row>
-        <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="8" size-xl="8" class="description">
+        <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12" class="description">
           <ion-card-title>Hola soy Osman Jimenez</ion-card-title>
           <ion-card-subtitle>Desarrollador FullStack | Ingeniero de Sistemas</ion-card-subtitle>
           <ion-label>
@@ -21,16 +21,13 @@
           <div class="social-media-links">
             <ng-container *ngFor="let social of iconSocial">
               <a href="{{ social.link }}" target="_blank"
-                attr.aria-label="{{ social.icon }} | Osman Armando Jimenez Cortes">
-                <button [class]="social.icon" attr.aria-label="{{ social.icon }} | Osman Armando Jimenez Cortes">
+                attr.aria-label="{{ social.icon }} | Osman Jimenez">
+                <button [class]="social.icon" attr.aria-label="{{ social.icon }} | Osman Jimenez">
                   <ion-icon slot="icon-only" [name]="social.icon"></ion-icon>
                 </button>
               </a>
             </ng-container>
           </div>
-        </ion-col>
-        <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="4" size-xl="4" class="profile">
-          <img src="assets/img/header/profile.webp" alt="Osman Armando Jimenez Cortes" />
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -41,7 +38,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Osman Armando Jimenez Cortes",
+  "name": "Osman Jimenez",
   "jobTitle": "Desarrollador FullStack | Ingeniero de Sistemas",
   "description": "Me especializo en el ámbito del desarrollo web, con más destreza en el diseño de interfaces gráficas (UX y UI) aunque también poseo buenos conocimientos para construir la lógica operacional y funcional en el Backend, he participado en eventos de desarrollo como el Google Hash Code 2020, me considero una persona con creatividad y curiosidad, la cual siempre está al tanto de los últimos avances de esta revolución tecnológica en la que estamos viviendo.",
   "image": "https://media.licdn.com/dms/image/D4E03AQHq6BX4WDJgJA/profile-displayphoto-shrink_400_400/0/1688229514019?e=1713398400&v=beta&t=v9_f-uYAtJF_uvUsr7AYfME1Eju4ghRO5b2vyapijYc",
