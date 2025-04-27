@@ -12,8 +12,8 @@ import { ComponentsModule } from 'src/app/components/components.module';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    HomePage,
   ],
-  declarations: [HomePage]
 })
-export class HomePageModule { }
+export class HomePageModule {}

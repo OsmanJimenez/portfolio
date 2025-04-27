@@ -1,35 +1,39 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
 import { ExperiencesService } from 'src/app/services/section/experiences/experiences.service';
 
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.scss'],
+  standalone: true,
+  imports: [IonicModule, CommonModule],
 })
 export class ExperienceComponent implements OnInit {
   experiences = [];
   jsonLdScript: string;
 
-  constructor(private experiencesService: ExperiencesService) { }
+  constructor(private experiencesService: ExperiencesService) {}
 
   ngOnInit() {
     this.loadExperiences();
   }
 
   loadExperiences() {
-    this.experiencesService.get().subscribe(
-      res => {
-        if (res) {
-          this.experiences = res.map(experience => ({
-            ...experience,
-            showFullDescription: false,
-            truncatedDescription: this.truncateDescription(experience.job_description),
-            fullDescription: experience.job_description
-          }));
-          this.generateJsonLdScript();
-        }
+    this.experiencesService.get().subscribe((res) => {
+      if (res) {
+        this.experiences = res.map((experience) => ({
+          ...experience,
+          showFullDescription: false,
+          truncatedDescription: this.truncateDescription(
+            experience.job_description
+          ),
+          fullDescription: experience.job_description,
+        }));
+        this.generateJsonLdScript();
       }
-    );
+    });
   }
 
   truncateDescription(description: string): string {
@@ -50,8 +54,9 @@ export class ExperienceComponent implements OnInit {
       "@type": "ItemList",
       "name": "Experiencia Laboral de Osman Jimenez",
       "itemListElement": [
-        ${this.experiences.map((experience, index) => {
-      return `{
+        ${this.experiences
+          .map((experience, index) => {
+            return `{
               "@type": "ListItem",
               "position": ${index + 1},
               "item": {
@@ -65,13 +70,13 @@ export class ExperienceComponent implements OnInit {
                   "logo": "${experience.job_enterprice_img}"
                 },
                 "skills": [
-                  ${experience.skills.map(skill => `"${skill}"`).join(',')}
+                  ${experience.skills.map((skill) => `"${skill}"`).join(',')}
                 ],
                 "description": "${experience.job_description}"
               }
             }`;
-    }).join(',')
-      }
+          })
+          .join(',')}
       ]
     }`;
   }

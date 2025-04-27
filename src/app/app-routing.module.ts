@@ -1,5 +1,4 @@
-import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 
 const routes: Routes = [
   {
@@ -8,10 +7,5 @@ const routes: Routes = [
       import('./pages/home/home.module').then((m) => m.HomePageModule),
   },
 ];
-@NgModule({
-  imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
-  ],
-  exports: [RouterModule],
-})
-export class AppRoutingModule {}
+
+export const appRoutes: Routes = routes;

@@ -21,19 +21,6 @@ import { CertificationsComponent } from './section/certifications/certifications
 registerLocaleData(es);
 
 @NgModule({
-  declarations: [
-    ToolbarComponent,
-    NavbarComponent,
-    CardProfileComponent,
-    SkillsComponent,
-    ToolsComponent,
-    ExperienceComponent,
-    ProjectsComponent,
-    FooterComponent,
-    EducationComponent,
-    AchievementsComponent, 
-    CertificationsComponent
-  ],
   exports: [
     ToolbarComponent,
     NavbarComponent,
@@ -44,8 +31,8 @@ registerLocaleData(es);
     ProjectsComponent,
     FooterComponent,
     EducationComponent,
-    AchievementsComponent, 
-    CertificationsComponent
+    AchievementsComponent,
+    CertificationsComponent,
   ],
   imports: [
     CommonModule,
@@ -53,6 +40,17 @@ registerLocaleData(es);
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
+    ToolbarComponent,
+    NavbarComponent,
+    CardProfileComponent,
+    SkillsComponent,
+    ToolsComponent,
+    ExperienceComponent,
+    ProjectsComponent,
+    FooterComponent,
+    EducationComponent,
+    AchievementsComponent,
+    CertificationsComponent,
   ],
 })
-export class ComponentsModule { }
+export class ComponentsModule {}

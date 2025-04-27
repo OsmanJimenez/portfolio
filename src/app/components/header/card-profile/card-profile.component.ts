@@ -1,9 +1,21 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
+import { addIcons } from 'ionicons';
+import {
+  logoYoutube,
+  logoGitlab,
+  logoGithub,
+  logoLinkedin,
+  logoTwitter,
+} from 'ionicons/icons';
 
 @Component({
   selector: 'app-card-profile',
   templateUrl: './card-profile.component.html',
   styleUrls: ['./card-profile.component.scss'],
+  standalone: true,
+  imports: [IonicModule, CommonModule],
 })
 export class CardProfileComponent implements OnInit {
   iconSocial = [
@@ -33,7 +45,15 @@ export class CardProfileComponent implements OnInit {
       name: 'Twitter',
     },
   ];
-  constructor() {}
+  constructor() {
+    addIcons({
+      'logo-youtube': logoYoutube,
+      'logo-gitlab': logoGitlab,
+      'logo-github': logoGithub,
+      'logo-linkedin': logoLinkedin,
+      'logo-twitter': logoTwitter,
+    });
+  }
 
   ngOnInit() {}
 }

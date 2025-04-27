@@ -1,30 +1,32 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
 import { SkillsService } from 'src/app/services/section/skills/skills.service';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss'],
+  standalone: true,
+  imports: [IonicModule, CommonModule],
 })
 export class SkillsComponent implements OnInit {
   skills = [];
   jsonLdScript: string;
 
-  constructor(private skillsService: SkillsService) { }
+  constructor(private skillsService: SkillsService) {}
 
   ngOnInit() {
     this.loadSkills();
   }
 
   loadSkills() {
-    this.skillsService.get().subscribe(
-      res => {
-        if (res) {
-          this.skills = res;
-          this.generateJsonLdScript();
-        }
+    this.skillsService.get().subscribe((res) => {
+      if (res) {
+        this.skills = res;
+        this.generateJsonLdScript();
       }
-    );
+    });
   }
 
   generateJsonLdScript() {
@@ -33,13 +35,14 @@ export class SkillsComponent implements OnInit {
       "@type": "ItemList",
       "name": "Conocimientos de Osman Jimenez",
       "itemListElement": [
-        ${this.skills.map((skill, index) => {
-      return `{
+        ${this.skills
+          .map((skill, index) => {
+            return `{
               "@type": "DefinedTerm",
               "name": "${skill.name}"
             }`;
-    }).join(',')
-      }
+          })
+          .join(',')}
       ]
     }`;
   }

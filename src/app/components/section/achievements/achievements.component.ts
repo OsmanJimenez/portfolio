@@ -1,30 +1,32 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
 import { ArchivementsService } from 'src/app/services/section/achievements/archivements.service';
 
 @Component({
   selector: 'app-achievements',
   templateUrl: './achievements.component.html',
   styleUrls: ['./achievements.component.scss'],
+  standalone: true,
+  imports: [IonicModule, CommonModule],
 })
 export class AchievementsComponent implements OnInit {
   achievements: any[] = [];
   jsonLdScript: string;
 
-  constructor(private achievementsService: ArchivementsService) { }
+  constructor(private achievementsService: ArchivementsService) {}
 
   ngOnInit() {
     this.loadAchievements();
   }
 
   loadAchievements() {
-    this.achievementsService.get().subscribe(
-      (res) => {
-        if (res) {
-          this.achievements = res;
-          this.generateJsonLdScript();
-        }
+    this.achievementsService.get().subscribe((res) => {
+      if (res) {
+        this.achievements = res;
+        this.generateJsonLdScript();
       }
-    );
+    });
   }
 
   generateJsonLdScript() {
@@ -33,8 +35,9 @@ export class AchievementsComponent implements OnInit {
       "@type": "ItemList",
       "name": "Insignias de Osman Jimenez",
       "itemListElement": [
-        ${this.achievements.map((achievement, index) => {
-      return `{
+        ${this.achievements
+          .map((achievement, index) => {
+            return `{
               "@type": "ListItem",
               "position": ${index + 1},
               "item": {
@@ -44,8 +47,8 @@ export class AchievementsComponent implements OnInit {
                 "url": "https://github.com/OsmanJimenez"
               }
             }`;
-    }).join(',')
-      }
+          })
+          .join(',')}
       ]
     }`;
   }

@@ -1,44 +1,50 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
 import { CertificationsService } from 'src/app/services/section/certifications/certifications.service';
 
 @Component({
   selector: 'app-certifications',
   templateUrl: './certifications.component.html',
   styleUrls: ['./certifications.component.scss'],
+  standalone: true,
+  imports: [IonicModule, CommonModule],
 })
 export class CertificationsComponent implements OnInit {
   certifications: any[] = [];
   originalCertifications: any[] = [];
-  authoritys: { name: string, icon: string, selected: boolean }[] = [];
+  authoritys: { name: string; icon: string; selected: boolean }[] = [];
   viewAll = false;
   jsonLdScript: string;
 
-  constructor(private certificationsService: CertificationsService) { }
+  constructor(private certificationsService: CertificationsService) {}
 
   ngOnInit() {
     this.loadCertifications();
   }
 
   loadCertifications() {
-    this.certificationsService.get().subscribe(
-      (res) => {
-        if (res) {
-          this.certifications = res;
-          this.originalCertifications = [...this.certifications];
-          this.generateAuthoritys();
-          this.generateJsonLdScript();
-        }
+    this.certificationsService.get().subscribe((res) => {
+      if (res) {
+        this.certifications = res;
+        this.originalCertifications = [...this.certifications];
+        this.generateAuthoritys();
+        this.generateJsonLdScript();
       }
-    );
+    });
   }
 
   generateAuthoritys() {
     const uniqueAuthorities = new Set<string>();
-    this.certifications.forEach(certification => uniqueAuthorities.add(certification.authority));
-    this.authoritys = Array.from(uniqueAuthorities).map(authority => ({
+    this.certifications.forEach((certification) =>
+      uniqueAuthorities.add(certification.authority)
+    );
+    this.authoritys = Array.from(uniqueAuthorities).map((authority) => ({
       name: authority,
-      icon: this.certifications.find(certification => certification.authority === authority).icon,
-      selected: false
+      icon: this.certifications.find(
+        (certification) => certification.authority === authority
+      ).icon,
+      selected: false,
     }));
   }
 
@@ -48,8 +54,9 @@ export class CertificationsComponent implements OnInit {
       "@type": "ItemList",
       "name": "Certificaciones de Osman Armando Jimenez Cortes",
       "itemListElement": [
-        ${this.certifications.map((certification, index) => {
-      return `{
+        ${this.certifications
+          .map((certification, index) => {
+            return `{
               "@type": "ListItem",
               "position": ${index + 1},
               "item": {
@@ -63,21 +70,23 @@ export class CertificationsComponent implements OnInit {
                 "url": "${certification.url}"
               }
             }`;
-    }).join(',')
-      }
+          })
+          .join(',')}
       ]
     }`;
   }
 
   resetFilter() {
-    this.authoritys.forEach(authority => authority.selected = false);
+    this.authoritys.forEach((authority) => (authority.selected = false));
     this.certifications = [...this.originalCertifications];
     this.generateJsonLdScript();
   }
 
   removeFilter(event: Event, authorityName: string) {
     event.stopPropagation();
-    const authority = this.authoritys.find(authority => authority.name === authorityName);
+    const authority = this.authoritys.find(
+      (authority) => authority.name === authorityName
+    );
     if (authority) {
       authority.selected = false;
       this.applyFilters();
@@ -97,12 +106,17 @@ export class CertificationsComponent implements OnInit {
   }
 
   applyFilters() {
-    const selectedAuthorities = this.authoritys.filter(authority => authority.selected);
+    const selectedAuthorities = this.authoritys.filter(
+      (authority) => authority.selected
+    );
     if (selectedAuthorities.length === 0) {
       this.resetFilter();
     } else {
-      this.certifications = this.originalCertifications.filter(certification =>
-        selectedAuthorities.some(authority => certification.authority === authority.name)
+      this.certifications = this.originalCertifications.filter(
+        (certification) =>
+          selectedAuthorities.some(
+            (authority) => certification.authority === authority.name
+          )
       );
       this.generateJsonLdScript();
     }

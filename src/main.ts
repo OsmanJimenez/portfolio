@@ -1,12 +1,21 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-
-import { AppModule } from './app/app.module';
+import { bootstrapApplication } from '@angular/platform-browser';
+import { AppComponent } from './app/app.component';
+import { RouteReuseStrategy } from '@angular/router';
+import { IonicRouteStrategy } from '@ionic/angular';
+import { provideRouter } from '@angular/router';
+import { appRoutes } from './app/app-routing.module';
+import { provideServiceWorker } from '@angular/service-worker';
 import { environment } from './environments/environment';
+import { provideIonicAngular } from '@ionic/angular/standalone';
 
-if (environment.production) {
-  enableProdMode();
-}
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.log(err));
+bootstrapApplication(AppComponent, {
+  providers: [
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    provideRouter(appRoutes),
+    provideIonicAngular(),
+    provideServiceWorker('ngsw-worker.js', {
+      enabled: environment.production,
+      registrationStrategy: 'registerWhenStable:30000',
+    }),
+  ],
+}).catch((err) => console.error(err));
