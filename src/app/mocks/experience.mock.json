@@ -1,7 +1,36 @@
 [
   {
+    "job_position": "Analista I - Desarrollador Senior",
+    "working_period": "Dic 2024 - Actualmente",
+    "job_enterprice": "Nequi",
+    "job_enterprice_img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Nequi_logo.svg/1200px-Nequi_logo.svg.png",
+    "job_enterprice_link": "https://www.nequi.com/",
+    "skills": [
+      "Angular",
+      "Ionic",
+      "TypeScript",
+      "RxJS",
+      "NgRx",
+      "HTML5",
+      "SCSS",
+      "Tailwind CSS",
+      "Figma",
+      "AWS",
+      "Azure DevOps",
+      "ESLint",
+      "OpenSearch",
+      "Git",
+      "GitHub",
+      "Jira",
+      "Postman",
+      "Clean Code"
+    ],
+    "description-business": "Nequi es la cuenta digital de Bancolombia que ofrece servicios financieros innovadores, accesibles y 100 % digitales a través de su aplicación móvil. Permite realizar transacciones, pagos, recargas y préstamos de manera ágil y segura, simplificando la gestión de finanzas personales.",
+    "job_description": "Como miembro de la célula de Moneda Extranjera en Nequi, desarrollo e implemento integraciones con las APIs de PayPal y Payoneer para habilitar procesos de recepción de divisas. Diseño flujos de pago seguros y eficientes, optimizo la experiencia de usuario en web y móvil utilizando Angular e Ionic, y participo en la definición de requisitos técnicos. Garantizo la calidad del código siguiendo estándares de Clean Code y git flow en GitHub, y colaboro en metodologías ágiles (planificación de sprints, revisión de código y despliegue continuo) mediante pipelines en AWS y Azure DevOps."
+  },
+  {
     "job_position": "Consultor Especialista en Nequi",
-    "working_period": "Nov 2023 - Actualmente",
+    "working_period": "Nov 2023 - Nov 2024",
     "job_enterprice": "SETI S.A.S",
     "job_enterprice_img": "https://pbs.twimg.com/profile_images/860196618209042432/KifSpWpu_400x400.jpg",
     "job_enterprice_link": "https://seti.com.co/",

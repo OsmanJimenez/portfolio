@@ -25,11 +25,6 @@ export class CardProfileComponent implements OnInit {
       name: 'Youtube',
     },
     {
-      link: 'https://gitlab.com/Osman.Jimenez',
-      icon: 'logo-gitlab',
-      name: 'GitLab',
-    },
-    {
       link: 'https://github.com/OsmanJimenez',
       icon: 'logo-github',
       name: 'GitHub',
@@ -39,19 +34,12 @@ export class CardProfileComponent implements OnInit {
       icon: 'logo-linkedin',
       name: 'Linkedin',
     },
-    {
-      link: 'https://twitter.com/osmanjimenezdev',
-      icon: 'logo-twitter',
-      name: 'Twitter',
-    },
   ];
   constructor() {
     addIcons({
       'logo-youtube': logoYoutube,
-      'logo-gitlab': logoGitlab,
       'logo-github': logoGithub,
       'logo-linkedin': logoLinkedin,
-      'logo-twitter': logoTwitter,
     });
   }
 
