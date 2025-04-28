@@ -21,8 +21,17 @@
         grid-template-rows: 50px 1fr;
     }
 
-    .card:hover .img-section {
-        transform: translateY(1em);
+    .card:hover {
+      .img-section {
+          transform: translateY(1em);
+      }
+
+      .card-desc {
+        box-shadow: 0px 11px 12px #151814;
+        background: #000;
+        transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+        z-index: 10;
+      }
     }
 
     .card-desc {
@@ -36,12 +45,6 @@
         background: transparent;
     }
 
-    .card-desc:hover {
-        box-shadow: 0px 11px 12px #151814;
-        background: #000;
-        transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
-        z-index: 10;
-    }
 
     .card-time {
         font-size: 1.7em;
@@ -64,7 +67,7 @@
     }
 
     .blue {
-        background: #29b8e8;
+        background: #4fc3f7;
     }
 
     .red {
@@ -72,15 +75,15 @@
     }
 
     .purple {
-        background: #ae81ff;
+        background: #b39ddb;
     }
 
     .green {
-        background: #33cc33;
+        background: #81c784;
     }
 
     .yellow {
-        background: #feff55;
+        background: #fff176 ;
     }
 
     .card-header {
